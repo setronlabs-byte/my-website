@@ -1,574 +1,783 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7H55LT9MPZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7H55LT9MPZ');
-</script>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- ============ SEO: PRIMARY META TAGS ============ -->
-<title>Setron Labs | Software Development & IT Consultancy in Vadodara, Gujarat</title>
-<meta name="description" content="Setron Labs is an IT consultancy and software engineering team in Vadodara, Gujarat, building web apps, mobile apps, cloud infrastructure, cybersecurity and data analytics solutions for growing businesses.">
-<meta name="keywords" content="IT consultancy Vadodara, software development company Gujarat, web development, app development, cloud solutions, cybersecurity services, data analytics, custom software engineering">
-<meta name="robots" content="index, follow">
-<meta name="author" content="Setron Labs">
-<link rel="canonical" href="https://www.setronlabs.com/">
-
-<!-- ============ SEO: OPEN GRAPH (Facebook/LinkedIn previews) ============ -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Setron Labs | Software Development & IT Consultancy in Vadodara, Gujarat">
-<meta property="og:description" content="We design, build, and maintain the software, infrastructure, and data systems that let growing companies operate without friction.">
-<meta property="og:url" content="https://www.setronlabs.com/">
-<meta property="og:site_name" content="Setron Labs">
-<meta property="og:image" content="https://www.setronlabs.com/assets/og-cover.jpg">
-<meta property="og:locale" content="en_IN">
-
-<!-- ============ SEO: TWITTER CARD ============ -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Setron Labs | Software Development & IT Consultancy">
-<meta name="twitter:description" content="Web, app, cloud, security and data engineering for growing businesses — based in Vadodara, Gujarat.">
-<meta name="twitter:image" content="https://www.setronlabs.com/assets/og-cover.jpg">
-
-<!-- Favicon: round "S" logo. /favicon.ico at site root is what Google Search reads; the PNG below is a fallback for browser tabs -->
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon-192.png">
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<script>try{var t=localStorage.getItem('gs-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}</script>
+<title>GridSense · Energy intelligence demo by Setron Labs</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-
-<!-- ============ SEO: STRUCTURED DATA (JSON-LD) ============ -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Setron Labs",
-  "description": "IT consultancy and software engineering team offering web development, app development, cloud solutions, cybersecurity, and data analytics.",
-  "url": "https://www.setronlabs.com/",
-  "email": "setronlabs@gmail.com",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Gotri",
-    "addressLocality": "Vadodara",
-    "addressRegion": "Gujarat",
-    "addressCountry": "IN"
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-      "opens": "09:00",
-      "closes": "18:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Saturday"],
-      "opens": "10:00",
-      "closes": "16:00"
-    }
-  ],
-  "sameAs": [
-    "https://www.linkedin.com/company/setronlabs",
-    "https://twitter.com/setronlabs",
-    "https://www.instagram.com/setronlabs"
-  ],
-  "makesOffer": [
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Web Development" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "App Development" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "IT Consultancy" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cloud Solutions" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cybersecurity" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Data Analytics" } }
-  ]
-}
-</script>
-
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --ink:#10141C;
-    --ink-soft:#1B2130;
-    --paper:#F5F3EE;
-    --paper-dim:#EAE7DE;
-    --steel:#445069;
-    --steel-light:#7C879C;
-    --brass:#B8862F;
-    --brass-soft:#D9B472;
-    --line:#D8D3C8;
-    --line-dark:#2B3242;
-  }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    font-family:'IBM Plex Sans',sans-serif;
-    color:var(--ink);
-    background:var(--paper);
-    font-size:16px;
-    line-height:1.6;
-  }
-  h1,h2,h3,.serif{font-family:'Source Serif 4',serif;}
-  a{color:inherit;}
-  .wrap{max-width:1120px;margin:0 auto;padding:0 32px;}
-  img{max-width:100%;display:block;}
-
-  /* Accessibility: skip link (helps SEO/UX signals too) */
-  .skip-link{
-    position:absolute;left:-999px;top:auto;
-    background:var(--brass);color:var(--ink);
-    padding:12px 18px;z-index:2000;font-weight:600;
-  }
-  .skip-link:focus{left:12px;top:12px;}
-
-  /* corner bracket motif — signature element */
-  .bracket{position:relative;}
-  .bracket::before,.bracket::after{
-    content:'';position:absolute;width:14px;height:14px;
-    border-color:var(--brass);border-style:solid;border-width:0;
-  }
-  .bracket::before{top:-1px;left:-1px;border-top-width:2px;border-left-width:2px;}
-  .bracket::after{bottom:-1px;right:-1px;border-bottom-width:2px;border-right-width:2px;}
-
-  /* Header */
-  header{
-    position:fixed;top:0;left:0;right:0;z-index:1000;
-    background:rgba(16,20,28,0.94);
-    backdrop-filter:blur(6px);
-    border-bottom:1px solid var(--line-dark);
-  }
-  .nav{display:flex;align-items:center;justify-content:space-between;padding:20px 0;}
-  .brand{
-    color:var(--paper);font-family:'Source Serif 4',serif;
-    font-size:1.25rem;font-weight:600;letter-spacing:0.02em;
-    display:flex;align-items:baseline;gap:8px;
-  }
-  .brand .dot{color:var(--brass);font-size:1.1rem;}
-  .nav-links{display:flex;gap:36px;list-style:none;}
-  .nav-links a{
-    color:#C7CCD8;text-decoration:none;font-size:0.92rem;font-weight:500;
-    transition:color 0.2s;
-  }
-  .nav-links a:hover{color:var(--paper);}
-  .nav-cta{
-    color:var(--ink)!important;background:var(--brass);
-    padding:10px 20px;font-weight:600;font-size:0.9rem;
-    text-decoration:none;transition:background 0.2s;
-  }
-  .nav-cta:hover{background:var(--brass-soft);}
-  .mobile-toggle{display:none;color:var(--paper);font-size:1.4rem;cursor:pointer;background:none;border:none;}
-
-  /* Hero */
-  .hero{
-    background:var(--ink);
-    color:var(--paper);
-    padding:190px 0 120px;
-    position:relative;
-    overflow:hidden;
-  }
-  .hero .grid-overlay{
-    position:absolute;inset:0;
-    background-image:
-      linear-gradient(var(--line-dark) 1px, transparent 1px),
-      linear-gradient(90deg, var(--line-dark) 1px, transparent 1px);
-    background-size:64px 64px;
-    opacity:0.35;
-    mask-image:linear-gradient(to bottom, black, transparent 85%);
-  }
-  .hero-inner{position:relative;display:grid;grid-template-columns:1.3fr 1fr;gap:60px;align-items:end;}
-  .eyebrow{
-    color:var(--brass-soft);font-size:0.85rem;font-weight:500;
-    margin-bottom:22px;letter-spacing:0.01em;
-  }
-  .hero h1{
-    font-size:3.1rem;font-weight:500;line-height:1.15;
-    max-width:620px;margin-bottom:26px;
-  }
-  .hero p.lead{
-    color:#B7BECC;font-size:1.08rem;max-width:480px;margin-bottom:38px;
-  }
-  .hero-actions{display:flex;gap:16px;}
-  .btn-primary{
-    background:var(--brass);color:var(--ink);padding:14px 28px;
-    text-decoration:none;font-weight:600;font-size:0.95rem;
-    display:inline-block;transition:background 0.2s;
-  }
-  .btn-primary:hover{background:var(--brass-soft);}
-  .btn-outline{
-    border:1px solid #4A5468;color:var(--paper);padding:14px 28px;
-    text-decoration:none;font-weight:600;font-size:0.95rem;
-    display:inline-block;transition:border-color 0.2s,color 0.2s;
-  }
-  .btn-outline:hover{border-color:var(--brass-soft);color:var(--brass-soft);}
-
-  .hero-panel{
-    border:1px solid var(--line-dark);
-    padding:28px;
-    background:rgba(255,255,255,0.02);
-  }
-  .hero-panel .row{
-    display:flex;justify-content:space-between;align-items:baseline;
-    padding:14px 0;border-bottom:1px solid var(--line-dark);
-  }
-  .hero-panel .row:last-child{border-bottom:none;}
-  .hero-panel .row .num{font-family:'Source Serif 4',serif;font-size:1.6rem;color:var(--brass-soft);}
-  .hero-panel .row .label{color:#9BA3B4;font-size:0.88rem;max-width:200px;text-align:right;}
-
-  /* Section shared */
-  section{padding:110px 0;}
-  .kicker{
-    color:var(--brass);font-size:0.85rem;font-weight:600;margin-bottom:14px;
-  }
-  .section-head{
-    display:grid;grid-template-columns:1fr 1fr;gap:40px;
-    align-items:end;margin-bottom:64px;
-  }
-  .section-head h2{font-size:2.1rem;font-weight:500;line-height:1.25;}
-  .section-head .support{color:var(--steel);font-size:1rem;max-width:420px;}
-
-  /* Services */
-  .services{background:var(--paper);}
-  .service-list{border-top:1px solid var(--line);}
-  .service-row{
-    display:grid;grid-template-columns:70px 1fr 1.4fr;gap:32px;
-    padding:32px 0;border-bottom:1px solid var(--line);
-    align-items:start;
-  }
-  .service-row .index{
-    font-family:'Source Serif 4',serif;color:var(--brass);font-size:1.1rem;
-  }
-  .service-row h3{font-size:1.25rem;font-weight:500;}
-  .service-row p{color:var(--steel);font-size:0.96rem;max-width:520px;}
-
-  /* Approach / About */
-  .approach{background:var(--ink);color:var(--paper);}
-  .approach .section-head h2,.approach .kicker{color:var(--paper);}
-  .approach .kicker{color:var(--brass-soft);}
-  .approach .section-head .support{color:#9BA3B4;}
-  .approach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-dark);border:1px solid var(--line-dark);}
-  .approach-card{background:var(--ink-soft);padding:36px 30px;}
-  .approach-card .mark{color:var(--brass-soft);font-family:'Source Serif 4',serif;font-size:1.4rem;margin-bottom:16px;display:block;}
-  .approach-card h3{font-size:1.1rem;font-weight:500;margin-bottom:12px;}
-  .approach-card p{color:#9BA3B4;font-size:0.92rem;}
-
-  /* Stats strip */
-  .stats{
-    background:var(--paper-dim);
-    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
-    padding:56px 0;
-  }
-  .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);}
-  .stats-grid .stat{
-    text-align:left;padding:0 30px;border-left:1px solid var(--line);
-  }
-  .stats-grid .stat:first-child{border-left:none;padding-left:0;}
-  .stat h3{font-size:2.2rem;font-weight:500;color:var(--ink);}
-  .stat p{color:var(--steel);font-size:0.88rem;margin-top:6px;}
-
-  /* Contact */
-  .contact{background:var(--paper);}
-  .contact-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:70px;}
-  .contact-item{padding:22px 0;border-bottom:1px solid var(--line);}
-  .contact-item:first-child{padding-top:0;}
-  .contact-item .label{color:var(--brass);font-size:0.82rem;font-weight:600;margin-bottom:6px;}
-  .contact-item p{color:var(--ink);font-size:1rem;}
-  .contact-item .sub{color:var(--steel);font-size:0.9rem;margin-top:2px;}
-
-  .form-panel{border:1px solid var(--line);padding:40px;background:#FFFFFF;}
-  .form-panel h3{font-size:1.2rem;font-weight:500;margin-bottom:24px;}
-  .form-group{margin-bottom:20px;}
-  .form-group label{display:block;font-size:0.85rem;color:var(--steel);margin-bottom:8px;}
-  .form-control{
-    width:100%;padding:13px 14px;border:1px solid var(--line);
-    background:var(--paper);font-family:inherit;font-size:0.95rem;color:var(--ink);
-  }
-  .form-control:focus{outline:none;border-color:var(--brass);}
-  textarea.form-control{resize:vertical;min-height:100px;}
-  .submit-btn{
-    background:var(--ink);color:var(--paper);border:none;
-    padding:14px 26px;font-weight:600;font-size:0.95rem;cursor:pointer;
-    width:100%;transition:background 0.2s;
-  }
-  .submit-btn:hover{background:var(--ink-soft);}
-
-  /* Footer */
-  footer{background:var(--ink);color:#9BA3B4;padding:60px 0 28px;}
-  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:50px;}
-  .footer-brand{color:var(--paper);font-family:'Source Serif 4',serif;font-size:1.15rem;margin-bottom:14px;}
-  .footer-grid p{font-size:0.9rem;line-height:1.7;max-width:280px;}
-  .footer-col h4{color:var(--paper);font-size:0.88rem;font-weight:600;margin-bottom:18px;}
-  .footer-col ul{list-style:none;}
-  .footer-col ul li{margin-bottom:11px;}
-  .footer-col ul li a{color:#9BA3B4;text-decoration:none;font-size:0.9rem;transition:color 0.2s;}
-  .footer-col ul li a:hover{color:var(--paper);}
-  .copyright{
-    border-top:1px solid var(--line-dark);padding-top:26px;
-    font-size:0.85rem;display:flex;justify-content:space-between;
-  }
-
-  @media(max-width:900px){
-    .hero-inner{grid-template-columns:1fr;}
-    .hero-panel{max-width:420px;}
-    .section-head{grid-template-columns:1fr;}
-    .service-row{grid-template-columns:50px 1fr;}
-    .service-row > p{grid-column:2;}
-    .approach-grid{grid-template-columns:1fr;}
-    .stats-grid{grid-template-columns:repeat(2,1fr);row-gap:30px;}
-    .stats-grid .stat:nth-child(3){border-left:none;}
-    .contact-grid{grid-template-columns:1fr;}
-    .footer-grid{grid-template-columns:1fr 1fr;row-gap:36px;}
-  }
-  @media(max-width:680px){
-    .nav-links{display:none;}
-    .mobile-toggle{display:block;}
-    .hero{padding:150px 0 90px;}
-    .hero h1{font-size:2.2rem;}
-    .wrap{padding:0 22px;}
-    .stats-grid{grid-template-columns:1fr;}
-    .stats-grid .stat{border-left:none;padding-left:0;}
-    .footer-grid{grid-template-columns:1fr;}
-    .copyright{flex-direction:column;gap:8px;}
-  }
+:root{--bg:#E8EDEF;--panel:#fff;--ink:#0F2A33;--muted:#5B7078;--line:#D3DCE0;--grid:#E4EAED;--soft:#F4F8F9;--softline:#EEF2F4;--teal:#0B7A82;--solar:#F0A81B;--alert:#D8443B;--alertsoft:#FFF6F5;--tagbg:#FCE7E5;--tagfg:#9C2A23;--okbg:#E2F3EA;--okfg:#16684A;--good:#1E8A5A;--side:#0F2A33;--tip:#0F2A33;color-scheme:light}
+:root[data-theme=dark]{--bg:#0A171C;--panel:#112229;--ink:#E7F0F3;--muted:#93AAB2;--line:#244049;--grid:#1D343C;--soft:#17303A;--softline:#1B343D;--teal:#4CC3CC;--alert:#F0625A;--alertsoft:#2A1B1C;--tagbg:#43211F;--tagfg:#FFB3AD;--okbg:#15372A;--okfg:#8EE0B8;--good:#4CC58E;--side:#071217;--tip:#050D10;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Schibsted Grotesk',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--ink);font-variant-numeric:tabular-nums;line-height:1.45}
+a{color:var(--teal)}
+:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.app{display:grid;grid-template-columns:232px minmax(0,1fr);min-height:100vh}
+aside{background:var(--side);color:#cfe0e4;position:sticky;top:0;height:100vh;padding:20px 12px;display:flex;flex-direction:column;gap:4px;overflow-y:auto}
+.brand{display:flex;align-items:center;gap:10px;padding:2px 10px 18px;color:#fff;font-weight:700;font-size:19px;letter-spacing:-.01em}
+.brand small{display:block;font-weight:400;font-size:12px;color:#8fb0b8;letter-spacing:0}
+aside nav{display:flex;flex-direction:column;gap:2px}
+aside nav a{display:flex;align-items:center;gap:10px;color:#cfe0e4;text-decoration:none;padding:9px 12px;border-radius:7px;font-size:14.5px;border-left:3px solid transparent}
+aside nav a:hover{background:rgba(255,255,255,.07)}
+aside nav a.on{background:rgba(255,255,255,.12);border-left-color:#5FD0D8;color:#fff;font-weight:600}
+.foot{margin-top:auto;padding:14px 10px 0;font-size:12px;color:#8fb0b8}
+main{padding:22px 28px 40px;min-width:0}
+.top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+h1{font-size:26px;margin:0;letter-spacing:-.015em}
+.lede{color:var(--muted);margin:2px 0 0;font-size:14.5px}
+.pill{font-size:12.5px;border:1px solid var(--line);background:var(--panel);border-radius:99px;padding:5px 12px;color:var(--muted)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:12px;margin-bottom:16px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:14px 16px 14px 18px;position:relative;text-decoration:none;color:inherit;display:block}
+a.kpi:hover{border-color:#9db3ba}
+.kpi::before{content:"";position:absolute;left:0;top:12px;bottom:12px;width:3px;border-radius:2px;background:var(--c,var(--teal))}
+.kpi .l{font-size:13px;color:var(--muted)}
+.kpi .v{font-size:25px;overflow-wrap:anywhere;font-weight:600;margin-top:3px;letter-spacing:-.01em}
+.kpi .s{font-size:12.5px;color:var(--muted);margin-top:2px}
+.up{color:var(--alert);font-weight:600}.down{color:var(--good);font-weight:600}.flat{color:var(--muted)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;min-width:0}
+.card h2{font-size:15.5px;margin:0 0 2px;font-weight:600}
+.card .sub{font-size:12.5px;color:var(--muted);margin-bottom:12px}
+.g2,.g21,.g12,.g3{display:grid;gap:16px;margin-bottom:16px}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g21{grid-template-columns:minmax(0,2fr) minmax(0,1fr)}
+.g12{grid-template-columns:minmax(0,1fr) minmax(0,2fr)}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.stack{margin-bottom:16px}
+.chart{position:relative;width:100%}
+.bar{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;margin-bottom:16px}
+.bar label{display:flex;flex-direction:column;gap:4px;font-size:12.5px;color:var(--muted)}
+select,input[type=number]{font:inherit;font-size:14px;padding:7px 10px;border:1px solid var(--line);border-radius:7px;background:var(--panel);color:var(--ink)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:7px;background:var(--panel);overflow:hidden}
+.seg button{border:0;background:none;padding:8px 13px;font:inherit;font-size:13.5px;cursor:pointer;color:var(--muted)}
+.seg button+button{border-left:1px solid var(--line)}
+.seg button.on{background:var(--ink);color:var(--bg)}
+.btn{font:inherit;font-size:13.5px;padding:8px 13px;border:1px solid var(--line);background:var(--panel);border-radius:7px;cursor:pointer;color:var(--ink)}
+.btn:hover{border-color:#9db3ba}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{font-weight:500;color:var(--muted);text-align:left;font-size:12.5px;padding:8px 10px;border-bottom:1px solid var(--line)}
+td{padding:10px;border-bottom:1px solid var(--softline);vertical-align:middle}
+td.n,th.n{text-align:right}
+tr.click{cursor:pointer}tr.click:hover{background:var(--soft)}
+.scroll{overflow-x:auto}
+.meter{height:6px;background:var(--grid);border-radius:3px;overflow:hidden;min-width:60px}
+.meter i{display:block;height:100%;background:var(--teal)}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px}
+.tag{display:inline-block;font-size:12px;padding:2px 9px;border-radius:99px;background:var(--tagbg);color:var(--tagfg);font-weight:600}
+.tag.ok{background:var(--okbg);color:var(--okfg)}
+.empty{color:var(--muted);text-align:center;padding:28px 12px;font-size:14px}
+.note{font-size:12.5px;color:var(--muted);margin-top:18px}
+.back{margin-bottom:12px}
+.ev{display:block;width:100%;text-align:left;font:inherit;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:11px 13px;cursor:pointer;margin-bottom:8px;color:inherit}
+.ev:hover{border-color:#9db3ba}
+.ev.on{border-color:var(--alert);background:var(--alertsoft)}
+.ev b{display:block;font-size:14.5px}.ev span{font-size:13px;color:var(--muted)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:4px 0 14px}
+.facts div{background:var(--soft);border-radius:8px;padding:9px 12px}
+.facts em{display:block;font-style:normal;font-size:12px;color:var(--muted)}
+.facts strong{font-size:16px;font-weight:600}
+.facts .bad strong{color:var(--alert)}
+.heatwrap{overflow-x:auto}
+.heat{display:grid;grid-template-columns:34px repeat(24,minmax(18px,1fr));gap:2px;font-size:11px;color:var(--muted);min-width:620px}
+.hc{height:26px;border-radius:3px;cursor:pointer;border:0;padding:0}
+.hc.pk{outline:2px solid var(--ink);outline-offset:-2px}
+.heat .lab{display:flex;align-items:center}
+.heat .hh{text-align:center;font-size:10.5px}
+.ins{border:1px solid var(--line);border-left:4px solid var(--c,var(--teal));border-radius:10px;padding:14px 16px;background:var(--panel);display:flex;flex-direction:column;gap:6px}
+.ins .k{font-size:13px;color:var(--muted);font-weight:600}
+.ins p{margin:0;font-size:15.5px}
+.ins a{font-size:13px;margin-top:2px;cursor:pointer}
+.insgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:14px}
+.rate{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.rate input[type=range]{width:min(420px,70vw);accent-color:var(--teal)}
+.rate output{font-size:26px;font-weight:600;min-width:130px}
+input[type=range]{accent-color:var(--teal)}
+.kpi .sp{position:absolute;right:14px;top:13px}
+.lead{background:var(--side);color:#E7F0F3;border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:24px 28px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:32px;align-items:end;margin-bottom:16px}
+.lead h2{font-size:25px;line-height:1.25;margin:0 0 10px;font-weight:600;letter-spacing:-.012em;max-width:30ch}
+.lead p{margin:0 0 16px;color:#A9C3CA;font-size:14.5px;max-width:58ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips a{color:#fff;text-decoration:none;font-size:13px;padding:6px 12px;border-radius:99px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.12)}
+.chips a:hover{background:rgba(255,255,255,.18)}
+.lead figure{margin:0}
+.strip{display:block;width:100%;height:auto}
+.lead figcaption{font-size:12px;color:#8fb0b8;margin-top:8px}
+.bar.sticky{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 0;margin-top:-10px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--panel);color:var(--ink);padding:8px 12px;border-radius:6px;z-index:10}
+.skip:focus{left:8px}
+.top .btn{display:inline-flex;align-items:center;gap:7px}
+.topr{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.foot a{color:#8fd8de}
+.hc:hover{filter:brightness(1.12)}
+code{background:var(--soft);padding:1px 6px;border-radius:4px}
+@media (max-width:1100px){.lead{grid-template-columns:minmax(0,1fr);gap:20px}}
+@media (max-width:1100px){.g21,.g12,.g3{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:900px){
+ .app{grid-template-columns:minmax(0,1fr)}
+ aside{position:static;height:auto;flex-direction:column;padding:12px}
+ aside nav{flex-direction:row;overflow-x:auto;gap:4px;padding-bottom:4px}
+ aside nav a{white-space:nowrap;border-left:0;border-bottom:3px solid transparent;border-radius:6px}
+ aside nav a.on{border-bottom-color:#5FD0D8}
+ .brand{padding-bottom:10px}.foot{display:none}
+ main{padding:16px 14px 32px}
+ .g2{grid-template-columns:minmax(0,1fr)}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-
-<a href="#main" class="skip-link">Skip to content</a>
-
-<header>
-  <div class="wrap nav">
-    <div class="brand">Setron Labs<span class="dot">.</span></div>
-    <ul class="nav-links">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#approach">Approach</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <a href="#contact" class="nav-cta">Start a project</a>
-    <button class="mobile-toggle" aria-label="Open menu">☰</button>
+<a class="skip" href="#view">Skip to content</a>
+<div class="app">
+ <aside>
+  <div class="brand">
+   <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><rect width="30" height="30" rx="7" fill="#0B7A82"/><rect x="6" y="15" width="4" height="9" rx="1" fill="#fff"/><rect x="13" y="8" width="4" height="16" rx="1" fill="#F0A81B"/><rect x="20" y="12" width="4" height="12" rx="1" fill="#fff"/></svg>
+   <div>GridSense<small>by Setron Labs</small></div>
   </div>
-</header>
-
-<main id="main">
-
-<section class="hero" id="home">
-  <div class="grid-overlay"></div>
-  <div class="wrap hero-inner">
-    <div>
-      <p class="eyebrow">IT consultancy &amp; software engineering in Vadodara, Gujarat</p>
-      <h1>We build the systems your business runs on.</h1>
-      <p class="lead">Setron Labs designs, builds, and maintains the software, infrastructure, and data systems that let growing companies operate without friction.</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn-primary">Talk to our team</a>
-        <a href="#services" class="btn-outline">See our services</a>
-      </div>
-    </div>
-    <div class="hero-panel bracket">
-      <div class="row"><span class="num">01</span><span class="label">Discovery &amp; systems audit</span></div>
-      <div class="row"><span class="num">02</span><span class="label">Architecture &amp; build</span></div>
-      <div class="row"><span class="num">03</span><span class="label">Deployment &amp; hardening</span></div>
-      <div class="row"><span class="num">04</span><span class="label">Ongoing support &amp; iteration</span></div>
-    </div>
+  <nav id="nav" aria-label="GridSense sections"></nav>
+  <div class="foot">Interactive demo with fictional data. <a href="data.json" download>Download data.json</a></div>
+ </aside>
+ <main>
+  <div class="top">
+   <div><h1 id="title">Overview</h1><p class="lede" id="lede"></p></div>
+   <div class="topr"><span class="pill">Demo · fictional data · September 2026</span><button class="btn" id="theme" type="button">Dark mode</button></div>
   </div>
-</section>
-
-<section class="services" id="services">
-  <div class="wrap">
-    <div class="section-head">
-      <div>
-        <p class="kicker">What we do</p>
-        <h2>Software development and IT consultancy services</h2>
-      </div>
-      <p class="support">Every engagement is staffed by engineers who stay with the project from planning through the first year of production use.</p>
-    </div>
-
-    <div class="service-list">
-      <div class="service-row">
-        <span class="index">01</span>
-        <h3>Web Development</h3>
-        <p>Custom web applications and customer-facing sites, built for speed, accessibility, and long-term maintainability rather than short-term launch metrics.</p>
-      </div>
-      <div class="service-row">
-        <span class="index">02</span>
-        <h3>App Development</h3>
-        <p>Native and cross-platform mobile products for iOS and Android, from first prototype through App Store and Play Store release.</p>
-      </div>
-      <div class="service-row">
-        <span class="index">03</span>
-        <h3>IT Consultancy</h3>
-        <p>Independent technical advisory on architecture, vendor selection, and platform decisions — the perspective of an engineering team, not a sales pipeline.</p>
-      </div>
-      <div class="service-row">
-        <span class="index">04</span>
-        <h3>Cloud Solutions</h3>
-        <p>Migration, infrastructure design, and cost optimisation across AWS, Azure, and GCP, sized to what the business actually needs to run.</p>
-      </div>
-      <div class="service-row">
-        <span class="index">05</span>
-        <h3>Cybersecurity</h3>
-        <p>Security assessments, threat modelling, and compliance support that gets fixed before it becomes a finding in someone else's audit.</p>
-      </div>
-      <div class="service-row">
-        <span class="index">06</span>
-        <h3>Data Analytics</h3>
-        <p>Reporting pipelines and business intelligence tooling that turn operational data into decisions your team can act on this quarter.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="approach" id="approach">
-  <div class="wrap">
-    <div class="section-head">
-      <div>
-        <p class="kicker">How we work</p>
-        <h2>Engineering discipline, applied to your business</h2>
-      </div>
-      <p class="support">We take on a small number of engagements at a time, and we stay on them.</p>
-    </div>
-
-    <div class="approach-grid">
-      <div class="approach-card">
-        <span class="mark">§1</span>
-        <h3>One team, start to finish</h3>
-        <p>The engineers who scope your project are the ones who build and support it — no handoffs between sales, delivery, and support desks.</p>
-      </div>
-      <div class="approach-card">
-        <span class="mark">§2</span>
-        <h3>Built to be maintained</h3>
-        <p>We document decisions as we make them and hand over systems your own team — or ours — can extend without archaeology.</p>
-      </div>
-      <div class="approach-card">
-        <span class="mark">§3</span>
-        <h3>Fixed scope, clear cost</h3>
-        <p>Every engagement starts with a written scope and timeline before a line of code is written, so budgets don't drift mid-project.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="stats" aria-label="Company statistics">
-  <div class="wrap stats-grid">
-    <div class="stat"><h3>250+</h3><p>Projects delivered</p></div>
-    <div class="stat"><h3>50+</h3><p>Active client partnerships</p></div>
-    <div class="stat"><h3>15+</h3><p>Industry recognitions</p></div>
-    <div class="stat"><h3>99%</h3><p>Client retention rate</p></div>
-  </div>
-</section>
-
-<section class="contact" id="contact">
-  <div class="wrap contact-grid">
-    <div>
-      <p class="kicker">Get in touch</p>
-      <h2 style="font-size:1.9rem;font-weight:500;margin-bottom:36px;">Tell us what you're building</h2>
-
-      <div class="contact-item">
-        <p class="label">Office</p>
-        <p>Gotri, Vadodara, Gujarat</p>
-      </div>
-      <div class="contact-item">
-        <p class="label">Email</p>
-        <p><a href="mailto:setronlabs@gmail.com">setronlabs@gmail.com</a></p>
-      </div>
-      <div class="contact-item">
-        <p class="label">Hours</p>
-        <p>Monday–Friday, 9:00 AM–6:00 PM</p>
-        <p class="sub">Saturday, 10:00 AM–4:00 PM</p>
-      </div>
-    </div>
-
-    <div class="form-panel bracket">
-      <h3>Request a consultation</h3>
-      <form id="contactForm">
-        <div class="form-group">
-          <label for="name">Full name</label>
-          <input type="text" id="name" class="form-control" placeholder="Your name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email address</label>
-          <input type="email" id="email" class="form-control" placeholder="you@company.com" required>
-        </div>
-        <div class="form-group">
-          <label for="service">Service of interest</label>
-          <select id="service" class="form-control" required>
-            <option value="">Select a service</option>
-            <option value="web-dev">Web Development</option>
-            <option value="app-dev">App Development</option>
-            <option value="consultancy">IT Consultancy</option>
-            <option value="cloud">Cloud Solutions</option>
-            <option value="security">Cybersecurity</option>
-            <option value="analytics">Data Analytics</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="message">Project details</label>
-          <textarea id="message" class="form-control" rows="4" placeholder="Tell us about your project" required></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Send message</button>
-      </form>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <div class="wrap">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand">Setron Labs</div>
-        <p>An IT consultancy and software engineering team helping growing companies build systems that hold up under real use.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#approach">Approach</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#services">Web Development</a></li>
-          <li><a href="#services">App Development</a></li>
-          <li><a href="#services">Cloud Solutions</a></li>
-          <li><a href="#services">Cybersecurity</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Connect</h4>
-        <ul>
-          <li><a href="#" rel="me">LinkedIn</a></li>
-          <li><a href="#" rel="me">Twitter</a></li>
-          <li><a href="#" rel="me">Instagram</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="copyright">
-      <span>© 2026 Setron Labs. All rights reserved.</span>
-      <span>Vadodara, Gujarat</span>
-    </div>
-  </div>
-</footer>
-
+  <div id="view" aria-live="polite"><div class="card empty">Loading GridSense data…</div></div>
+ </main>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <script>
-  document.getElementById('contactForm').addEventListener('submit', function(e){
-    e.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const service = document.getElementById('service').value;
-    alert(`Thank you, ${name}. We've received your message about ${service} and will reach out at ${email} shortly.`);
-    this.reset();
-  });
-</script>
+(async function(){'use strict';
+let DATA;
+try{if(location.protocol==='file:')throw new Error('file');const res=await fetch('data.json',{cache:'no-cache'});if(!res.ok)throw new Error('HTTP '+res.status);DATA=await res.json()}
+catch(err){
+ // Opened straight from disk (file://), where fetch is blocked: fall back to data.js, which holds the same JSON
+ DATA=await new Promise(ok=>{const s=document.createElement('script');s.src='data.js';s.onload=()=>ok(window.GRIDSENSE_DATA||null);s.onerror=()=>ok(null);document.head.appendChild(s)});
+ if(!DATA){document.getElementById('view').innerHTML='<div class="card empty"><b>Could not load the demo data</b><br>Keep <code>data.json</code> and <code>data.js</code> in the same folder as <code>index.html</code>, or run <code>node generate-data.js</code> to recreate them.</div>';return}
+}
+const [PY,PM]=DATA.meta.period.split('-').map(Number),MO=PM-1;
+/* =====================================================================
+   DATA: ~3,600 fictional hourly readings (5 locations x 30 days x 24 h)
+   plus 24 months of history. Everything is seeded, so it is repeatable.
+   ===================================================================== */
+const M=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const DOW=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+const DAYS=30;
+const date=d=>new Date(PY,MO,1+d);
+const dayLbl=d=>{const t=date(d);return t.getDate()+' '+M[t.getMonth()]};
+const hr=h=>{h=((h%24)+24)%24;return (h%12===0?12:h%12)+':00 '+(h<12?'AM':'PM')};
+const hrRange=(h,n)=>hr(h)+'–'+hr(h+n);
+const sum=a=>a.reduce((x,y)=>x+y,0);
 
+const B=DATA.locations.map(l=>({id:l.id,name:l.name,short:l.short,eff:l.efficiency,area:l.area_m2,color:l.color,eq:l.equipment}));
+const BI=Object.fromEntries(B.map((b,i)=>[b.id,i]));
+const EQ=[
+ {k:'hvac',n:'HVAC',c:'#0F8E98'},{k:'prod',n:'Production machinery',c:'#C2547A'},{k:'server',n:'Servers',c:'#5B73D6'},
+ {k:'chill',n:'Chillers',c:'#4C93C9'},{k:'light',n:'Lighting',c:'#E0A21B'},{k:'comp',n:'Compressors',c:'#7A8F3A'},
+ {k:'pump',n:'Pumps',c:'#5DA39B'},{k:'other',n:'Other',c:'#98A6AC'}];
+const EQN=Object.fromEntries(EQ.map(e=>[e.k,e.n]));
+const EQC=Object.fromEntries(EQ.map(e=>[e.k,e.c]));
+const R=[];
+const RI=Array.from({length:DAYS},()=>Array.from({length:24},()=>Array(B.length)));
+DATA.readings.forEach(x=>{const d=+x.t.slice(8,10)-1,h=+x.t.slice(11,13),b=BI[x.loc],dow=date(d).getDay();
+ const r={d,h,b,dow,we:dow===0||dow===6,kwh:x.kwh};R.push(r);RI[d][h][b]=r});
+const TOT=RI.map(day=>day.map(hs=>sum(hs.map(r=>r.kwh))));   // site kWh per hour (= average kW)
+const DAYT=TOT.map(sum);
+const TOTAL=sum(DAYT);
+const BT=B.map((_,i)=>sum(R.filter(r=>r.b===i).map(r=>r.kwh)));
+
+// Baselines for anomaly detection: median and MAD per location, hour of day and weekday/weekend
+const med=a=>{const s=[...a].sort((x,y)=>x-y),n=s.length,m=n>>1;return n%2?s[m]:(s[m-1]+s[m])/2};
+const grp={};
+R.forEach(r=>{(grp[r.b+'|'+(r.we?1:0)+'|'+r.h]=grp[r.b+'|'+(r.we?1:0)+'|'+r.h]||[]).push(r)});
+Object.values(grp).forEach(g=>{
+ const vs=g.map(r=>r.kwh),m=med(vs),mad=med(vs.map(v=>Math.abs(v-m))),sg=Math.max(1.4826*mad,0.02*m);
+ g.forEach(r=>{r.base=m;r.sg=sg;r.z=(r.kwh-m)/sg;r.lo=m-2.5*sg;r.hi=m+2.5*sg});
+});
+
+// Equipment split (estimated): each location's fixed mix, nudged by time of day
+const eqCache={};
+function EQF(b,h){
+ const key=b*100+h;if(eqCache[key])return eqCache[key];
+ const w={};let s=0;
+ EQ.forEach(e=>{let x=B[b].eq[e.k]||0;
+  if(e.k==='hvac'||e.k==='chill')x*=0.75+0.6*Math.exp(-((h-15)**2)/18);
+  if(e.k==='light')x*=(h<6||h>=22)?0.7:1.05;
+  w[e.k]=x;s+=x});
+ EQ.forEach(e=>w[e.k]/=s);
+ return eqCache[key]=w;
+}
+const EQT={},EQDAY={},EQHR={},EQB={};
+EQ.forEach(e=>{EQT[e.k]=0;EQDAY[e.k]=Array(DAYS).fill(0);EQHR[e.k]=Array(24).fill(0);EQB[e.k]=Array(B.length).fill(0)});
+R.forEach(r=>{const f=EQF(r.b,r.h);EQ.forEach(e=>{const v=r.kwh*f[e.k];EQT[e.k]+=v;EQDAY[e.k][r.d]+=v;EQHR[e.k][r.h]+=v/DAYS;EQB[e.k][r.b]+=v})});
+
+// Monthly history, Oct 2024 to Sep 2026
+const MONTHLY=DATA.history.map(h=>h.kwh);
+MONTHLY[23]=TOTAL;
+const mLabel=i=>{const m=(9+i)%12,y=2024+Math.floor((9+i)/12);return M[m]+' '+String(y).slice(2)};
+const SOLSH=DATA.history.slice(12).map(h=>h.solar_share);
+const EF=DATA.meta.emission_factor_kg_per_kwh; // kg CO2 per grid kWh, illustrative
+const EFF=sum(B.map((b,i)=>b.eff*BT[i]))/TOTAL, EFF0=EFF-1.2;
+
+// Solar: 72,400 kWh over the month, shaped by a daily sun curve and cloudy days
+const SOL=Array.from({length:DAYS},()=>Array(24).fill(0));
+DATA.solar.forEach(x=>{SOL[+x.t.slice(8,10)-1][+x.t.slice(11,13)]=x.kwh});
+const SOLDAY=SOL.map(sum),SOLTOT=sum(SOLDAY);
+SOLSH[11]=SOLTOT/TOTAL;
+const EXC=SOL.map((day,d)=>day.map((v,h)=>Math.max(0,v-TOT[d][h])));
+const EXCDAY=EXC.map(sum),EXCTOT=sum(EXCDAY);
+const GRIDNET=TOTAL-SOLTOT;
+const co2=kwh=>kwh*EF/1000;
+
+// Peak and profile helpers
+const WD=Array(24).fill(0),WE=Array(24).fill(0);
+{let nd=0,ne=0;for(let d=0;d<DAYS;d++){const w=date(d).getDay();const we=w===0||w===6;we?ne++:nd++;for(let h=0;h<24;h++)(we?WE:WD)[h]+=TOT[d][h]}
+ for(let h=0;h<24;h++){WD[h]/=nd;WE[h]/=ne}}
+let MAXH={v:0,d:0,h:0};
+for(let d=0;d<DAYS;d++)for(let h=0;h<24;h++)if(TOT[d][h]>MAXH.v)MAXH={v:TOT[d][h],d,h};
+function peakWin(n){let best=-1,bh=0;for(let h=0;h<=24-n;h++){const s=sum(WD.slice(h,h+n));if(s>best){best=s;bh=h}}return bh}
+const OPH=B.map((_,i)=>{const m=BT[i]/(DAYS*24);return R.filter(r=>r.b===i&&r.kwh>0.7*m).length});
+const NIGHT_SHARE=sum(R.filter(r=>r.h<6).map(r=>r.kwh))/TOTAL;
+
+// State
+const S={rate:DATA.meta.tariff_per_kwh,k:4,up:.25,pw:2,sel:{b:null,e:null,a:null},fc:'base',
+ c:{g:'daily',range:30,b:'all',eq:'all',tb:'all'}};
+const events=()=>R.filter(r=>r.z>S.k&&r.kwh>(1+S.up)*r.base).sort((a,b)=>a.d-b.d||a.h-b.h);
+const ek=r=>r.d+'-'+r.h+'-'+r.b;
+
+// Forecast: weekday pattern from this month, scaled by damped recent month-on-month growth
+const SC={base:{n:'Baseline',m:1},eff:{n:'Efficiency drive (−6%)',m:.94},heat:{n:'Hot month (+5%)',m:1.05}};
+function forecast(sc){
+ const byDow=Array.from({length:7},()=>[]);DAYT.forEach((v,d)=>byDow[date(d).getDay()].push(v));
+ const mean=byDow.map(a=>sum(a)/a.length);
+ const res=DAYT.map((v,d)=>v-mean[date(d).getDay()]);
+ const sd=Math.sqrt(sum(res.map(x=>x*x))/(res.length-1));
+ const g=([21,22,23].map(i=>MONTHLY[i]/MONTHLY[i-1]-1).reduce((a,b)=>a+b,0)/3)*0.9;
+ const days=Array.from({length:30},(_,i)=>{const t=new Date(2026,9,1+i);
+  const p=mean[t.getDay()]*(1+g)*SC[sc].m,w=1.64*sd*Math.sqrt(1+i/15);
+  return{t,p,lo:p-w,hi:p+w}});
+ const total=sum(days.map(x=>x.p));
+ return{days,total,g,growth:total/TOTAL-1,sd};
+}
+
+/* =====================================================================
+   UI
+   ===================================================================== */
+/*__UI__*/
+const $=s=>document.querySelector(s);
+const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const fmt=n=>Math.round(n).toLocaleString('en-US');
+const f1=n=>n.toLocaleString('en-US',{minimumFractionDigits:1,maximumFractionDigits:1});
+const inr=n=>'₹'+(Math.abs(n)>=1e5?(n/1e5).toFixed(1)+' lakh':Math.round(n).toLocaleString('en-IN'));
+const inrL=n=>'₹'+(n/1e5).toFixed(1)+'L';
+const pct=(n,d=1)=>(n*100).toFixed(d)+'%';
+const sgn=n=>(n>=0?'+':'−')+Math.abs(n).toFixed(1)+'%';
+const alpha=(hex,al)=>hex+Math.round(al*255).toString(16).padStart(2,'0');
+const words=['zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve'];
+const dtl=(d,h)=>DOW[date(d).getDay()]+' '+dayLbl(d)+', '+hr(h);
+
+if(typeof Chart==='undefined'){
+ document.getElementById('view').innerHTML='<div class="card empty">The chart library could not be loaded. Check your internet connection and reload.</div>';
+ return;
+}
+const reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+Chart.defaults.font.family="'Schibsted Grotesk',system-ui,sans-serif";
+Chart.defaults.font.size=12.5;
+Chart.defaults.color='#5B7078';
+Chart.defaults.animation=reduce?false:{duration:300};
+Chart.register({id:'bands',beforeDatasetsDraw(c,_,o){
+ if(!o||!o.list)return;const {ctx,chartArea:ca,scales:{x}}=c;
+ o.list.forEach(b=>{const x1=Math.max(x.getPixelForValue(b.from-0.5),ca.left),x2=Math.min(x.getPixelForValue(b.to+0.5),ca.right);
+  ctx.save();ctx.fillStyle=b.color;ctx.fillRect(x1,ca.top,x2-x1,ca.bottom-ca.top);ctx.restore()})}});
+
+let theme=document.documentElement.dataset.theme||'light';
+const SUN='<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg>';
+const MOON='<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg>';
+function applyTheme(){document.documentElement.dataset.theme=theme;const b=$('#theme');if(b)b.innerHTML=(theme==='dark'?SUN+' Light mode':MOON+' Dark mode');Chart.defaults.color=css('--muted')}
+$('#theme').onclick=()=>{theme=theme==='dark'?'light':'dark';try{localStorage.setItem('gs-theme',theme)}catch(e){}applyTheme();render(true)};
+let charts=[];
+function chart(id,cfg){const el=document.getElementById(id);if(!el)return null;const c=new Chart(el,cfg);charts.push(c);return c}
+function killCharts(){charts.forEach(c=>c.destroy());charts=[]}
+function deep(a,b){for(const k in b){if(b[k]&&typeof b[k]==='object'&&!Array.isArray(b[k])&&a[k]&&typeof a[k]==='object')deep(a[k],b[k]);else a[k]=b[k]}return a}
+const base=(extra)=>deep({responsive:true,maintainAspectRatio:false,interaction:{mode:'index',intersect:false},onHover:(e,els,c)=>{c.canvas.style.cursor=(els.length&&c.options.onClick)?'pointer':'default'},
+ plugins:{legend:{display:false,labels:{usePointStyle:true,boxWidth:8}},tooltip:{backgroundColor:css('--tip'),padding:10,cornerRadius:6}},
+ scales:{x:{grid:{display:false},ticks:{maxRotation:0,autoSkip:true}},y:{beginAtZero:true,grid:{color:css('--grid')}}}},extra||{});
+const ytitle=t=>({title:{display:true,text:t,color:'#5B7078'}});
+const box=(id,h)=>`<div class="chart" style="height:${h||300}px"><canvas id="${id}"></canvas></div>`;
+const card=(t,s,inner,cls)=>`<div class="card ${cls||''}"><h2>${t}</h2>${s?`<div class="sub">${s}</div>`:'<div style="height:10px"></div>'}${inner}</div>`;
+const spark=(a,col)=>{const mn=Math.min(...a),mx=Math.max(...a),W=64,H=22,pts=a.map((v,i)=>[i/(a.length-1)*W,H-3-(v-mn)/(mx-mn||1)*(H-7)]),l=pts[pts.length-1];return `<svg class="sp" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" aria-hidden="true"><polyline points="${pts.map(p=>p[0].toFixed(1)+','+p[1].toFixed(1)).join(' ')}" fill="none" stroke="${col}" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/><circle cx="${l[0].toFixed(1)}" cy="${l[1].toFixed(1)}" r="2.4" fill="${col}"/></svg>`};
+const kpi=(l,v,s,col,href,sp)=>`<${href?'a href="'+href+'"':'div'} class="kpi" style="--c:${col}">${sp||''}<div class="l">${l}</div><div class="v">${v}</div><div class="s">${s||''}</div></${href?'a':'div'}>`;
+const dlt=(n,goodDown,suffix)=>`<span class="${(n>0)===!!goodDown?'up':'down'}">${n>0?'▲':'▼'} ${Math.abs(n).toFixed(1)}${suffix||'%'}</span>`;
+const stackTip=sets=>({footer:items=>sets>1?'Total '+fmt(sum(items.map(i=>i.parsed.y||0)))+' kWh':''});
+
+const PAGES=[
+ ['overview','Overview','This month at a glance: energy, cost, risks and where to look next.'],
+ ['consumption','Consumption','Filter by time, location and equipment. Click any point to see the readings behind it.'],
+ ['buildings','Buildings','Compare locations, then open one for detail.'],
+ ['equipment','Equipment','Which equipment uses the most energy. Open one to see its history.'],
+ ['peak','Peak demand','When demand is highest and what those hours cost.'],
+ ['anomalies','Anomalies','Readings that break from each location’s normal pattern.'],
+ ['cost','Cost analysis','Turn kWh into rupees and test a different tariff.'],
+ ['solar','Solar & grid','How much of the load rooftop solar covers.'],
+ ['forecast','Forecast','Projected consumption for the next 30 days.'],
+ ['sustainability','Sustainability','Estimated emissions and renewable share.'],
+ ['insights','Insights','Observations generated from the data, not hand-written.']];
+const PG={};
+const ICON={overview:'<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
+ consumption:'<path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/>',
+ buildings:'<path d="M4 21V5l8-2v18"/><path d="M12 9h8v12"/><path d="M8 9h1M8 13h1M8 17h1M16 13h1M16 17h1"/>',
+ equipment:'<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>',
+ peak:'<path d="M3 18l5-10 4 6 3-4 6 8z"/>',
+ anomalies:'<path d="M12 3l10 18H2z"/><path d="M12 10v5M12 18h.01"/>',
+ cost:'<path d="M7 5h10M7 9h10M9 5c4 0 6 2 6 4s-2 4-6 4l7 7"/>',
+ solar:'<circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/>',
+ forecast:'<path d="M3 17l5-5 4 3 3-4"/><path d="M15 11l2-2h4" stroke-dasharray="2 2"/><path d="M3 21h18"/>',
+ sustainability:'<path d="M5 19c0-9 5-14 15-14 0 10-5 15-14 15"/><path d="M5 19c3-5 6-8 10-10"/>',
+ insights:'<path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10c1 1 1.5 2 1.5 3h5c0-1 .5-2 1.5-3a6 6 0 0 0-4-10z"/>'};
+$('#nav').innerHTML=PAGES.map(p=>`<a href="#${p[0]}" data-p="${p[0]}"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICON[p[0]]}</svg><span>${p[1]}</span></a>`).join('');
+
+function render(keep){
+ const id=(location.hash||'#overview').slice(1);
+ const p=PAGES.find(x=>x[0]===id)||PAGES[0];
+ killCharts();
+ document.querySelectorAll('#nav a').forEach(a=>a.classList.toggle('on',a.dataset.p===p[0]));
+ $('#title').textContent=p[1];$('#lede').textContent=p[2];
+ document.title=p[1]+' · GridSense by Setron Labs';
+ PG[p[0]]();
+ if(!keep)window.scrollTo(0,0);
+}
+function go(h){if(location.hash===h)render();else location.hash=h}
+window.addEventListener('hashchange',render);
+document.addEventListener('click',e=>{
+ const t=e.target.closest('[data-go]');if(!t)return;
+ if(t.dataset.b!==undefined)S.sel.b=+t.dataset.b;
+ if(t.dataset.e!==undefined)S.sel.e=t.dataset.e;
+ if(t.dataset.a!==undefined)S.sel.a=t.dataset.a;
+ e.preventDefault();go(t.dataset.go);
+});
+const foot=t=>`<p class="note">${t}</p>`;
+
+/* ---------- shared calculations ---------- */
+function bStats(i){
+ const rs=R.filter(r=>r.b===i);let mx=rs[0];rs.forEach(r=>{if(r.kwh>mx.kwh)mx=r});
+ return{kwh:BT[i],cost:BT[i]*S.rate,peak:mx,avg:BT[i]/(DAYS*24),ev:events().filter(r=>r.b===i).length,share:BT[i]/TOTAL};
+}
+function winShare(n){const h0=peakWin(n);let s=0;for(let d=0;d<DAYS;d++)for(let h=h0;h<h0+n;h++)s+=TOT[d][h];return{h0,kwh:s,share:s/TOTAL}}
+function insights(){
+ const out=[],ev=events(),top=BT.indexOf(Math.max(...BT));
+ out.push({c:'Consumption',col:'#0F8E98',t:`${B[top].name} accounts for ${pct(BT[top]/TOTAL)} of total energy consumption.`,go:'#buildings',b:top,l:'Open '+B[top].short});
+ if(ev.length){const nt=ev.filter(r=>r.h<6).length;
+  out.push({c:'Anomaly',col:'#D8443B',t:nt===ev.length?`Unusually high overnight consumption detected on ${words[ev.length]||ev.length} occasion${ev.length>1?'s':''}.`:`${ev.length} abnormal readings flagged, ${nt} of them overnight.`,go:'#anomalies',a:ek(ev[0]),l:'Inspect readings'})}
+ else out.push({c:'Anomaly',col:'#1E8A5A',t:'No readings break from their normal pattern at the current sensitivity.',go:'#anomalies',l:'Adjust sensitivity'});
+ const w=winShare(S.pw);
+ out.push({c:'Cost',col:'#E0A21B',t:`Peak-hour consumption (${hrRange(w.h0,S.pw)}) represents about ${pct(w.share,0)} of monthly energy cost, roughly ${inr(w.kwh*S.rate)}.`,go:'#peak',l:'See peak demand'});
+ out.push({c:'Solar',col:'#F0A81B',t:`Solar generation covers about ${pct(SOLTOT/TOTAL,0)} of total consumption.`,go:'#solar',l:'Open solar & grid'});
+ let n=0;for(let i=23;i>0&&MONTHLY[i]>MONTHLY[i-1];i--)n++;
+ out.push({c:'Trend',col:'#6A5BB0',t:n>=2?`Energy consumption has increased for ${words[n]||n} consecutive months, ${sgn((MONTHLY[23]/MONTHLY[23-n]-1)*100)} in total.`:`Energy consumption moved ${sgn((MONTHLY[23]/MONTHLY[22]-1)*100)} against last month.`,go:'#consumption',l:'View trend'});
+ const te=EQ.slice().sort((a,b)=>EQT[b.k]-EQT[a.k])[0];
+ out.push({c:'Equipment',col:te.c,t:`${te.n} is the largest load at ${pct(EQT[te.k]/TOTAL)} of consumption.`,go:'#equipment',e:te.k,l:'Open '+te.n});
+ const li=B.map((b,i)=>i).sort((a,b)=>B[a].eff-B[b].eff)[0];
+ const sv=BT[li]*(1-B[li].eff/85);
+ out.push({c:'Efficiency',col:'#C2547A',t:`${B[li].name} has the lowest efficiency score (${B[li].eff}%). Reaching 85% would save about ${fmt(sv)} kWh (${inr(sv*S.rate)}) a month.`,go:'#buildings',b:li,l:'Open '+B[li].short});
+ out.push({c:'Overnight load',col:'#5B73D6',t:`Between midnight and 6 AM the sites still draw ${pct(NIGHT_SHARE,0)} of all energy, so baseline load is worth a look.`,go:'#consumption',l:'Explore night hours'});
+ const F=forecast(S.fc);
+ out.push({c:'Forecast',col:'#6A5BB0',t:`The next 30 days are projected at ${fmt(F.total)} kWh (${sgn(F.growth*100)}), about ${inr(F.total*S.rate)} at the current rate.`,go:'#forecast',l:'Open forecast'});
+ const e0=co2(MONTHLY[22]*(1-SOLSH[10])),e1=co2(GRIDNET);
+ out.push({c:'Sustainability',col:'#1E8A5A',t:`Estimated emissions are ${f1(e1)} t CO₂, ${sgn((e1/e0-1)*100)} from August, even though consumption rose, because solar covered a larger share.`,go:'#sustainability',l:'Open sustainability'});
+ return out;
+}
+const insCard=i=>`<div class="ins" style="--c:${i.col}"><span class="k">${i.c}</span><p>${i.t}</p><a href="${i.go}" data-go="${i.go}" ${i.b!==undefined?`data-b="${i.b}"`:''} ${i.e!==undefined?`data-e="${i.e}"`:''} ${i.a!==undefined?`data-a="${i.a}"`:''}>${i.l}</a></div>`;
+
+/* ---------- Overview ---------- */
+const cap=t=>t.charAt(0).toUpperCase()+t.slice(1);
+const monthName=o=>new Date(PY,MO+o,1).toLocaleString('en-US',{month:'long'});
+function strip(ev){
+ const evd=new Set(ev.map(r=>r.d)),mx=Math.max(...DAYT),W=300,H=70,bw=W/DAYS;let s=`<svg viewBox="0 0 ${W} ${H}" class="strip" role="img" aria-label="Daily energy use this month">`;
+ DAYT.forEach((v,d)=>{const h=Math.max(3,v/mx*(H-16)),we=date(d).getDay()%6===0;
+  s+=`<rect x="${(d*bw+.9).toFixed(1)}" y="${(H-h).toFixed(1)}" width="${(bw-1.8).toFixed(1)}" height="${h.toFixed(1)}" rx="1.2" fill="${we?'rgba(255,255,255,.3)':'rgba(255,255,255,.7)'}"><title>${dayLbl(d)}: ${fmt(v)} kWh${evd.has(d)?' (flagged reading)':''}</title></rect>`;
+  if(evd.has(d))s+=`<circle cx="${(d*bw+bw/2).toFixed(1)}" cy="${(H-h-6).toFixed(1)}" r="3" fill="#FF6B61"/>`});
+ return s+'</svg>';
+}
+PG.overview=()=>{
+ const ev=events(),top=BT.indexOf(Math.max(...BT));
+ const dM=TOTAL/MONTHLY[22]-1,e1=co2(GRIDNET),e0=co2(MONTHLY[22]*(1-SOLSH[10]));
+ const pw=winShare(S.pw),dayPk=DAYT.map((_,d)=>Math.max(...TOT[d])),dayGrid=DAYT.map((v,d)=>v-SOLDAY[d]);
+ const lead=`<section class="lead" aria-label="Summary"><div><h2>${monthName(0)} used ${fmt(TOTAL)} kWh, ${Math.abs(dM*100).toFixed(1)}% ${dM>=0?'more':'less'} than ${monthName(-1)}.${ev.length?' '+cap(words[ev.length]||String(ev.length))+' reading'+(ev.length>1?'s need':' needs')+' attention.':''}</h2>
+  <p>${B[top].name} is the largest load at ${pct(BT[top]/TOTAL)} of consumption. Solar covered ${pct(SOLTOT/TOTAL,0)} of the month, and demand peaks between ${hrRange(pw.h0,S.pw)}.</p>
+  <div class="chips"><a href="#anomalies">${ev.length} flagged reading${ev.length===1?'':'s'}</a><a href="#peak">Peak ${hrRange(pw.h0,S.pw)}</a><a href="#cost">${inr(TOTAL*S.rate)} estimated bill</a></div></div>
+  <figure>${strip(ev)}<figcaption>Daily energy use, ${dayLbl(0)} to ${dayLbl(DAYS-1)}. Lighter bars are weekends; red dots are days with a flagged reading.</figcaption></figure></section>`;
+ $('#view').innerHTML=lead+`<div class="kpis">`+
+  kpi('Total energy',fmt(TOTAL)+' kWh',dlt(dM*100,true)+' vs '+monthName(-1),'#0F8E98','#consumption',spark(DAYT,'#0F8E98'))+
+  kpi('Estimated cost',inr(TOTAL*S.rate),`at ₹${S.rate.toFixed(2)}/kWh`,'#E0A21B','#cost',spark(DAYT,'#E0A21B'))+
+  kpi('Energy efficiency',EFF.toFixed(1)+'%',dlt(EFF-EFF0,false,' pts')+' vs August','#4C93C9','#buildings')+
+  kpi('Peak demand',Math.round(MAXH.v)+' kW',dtl(MAXH.d,MAXH.h),'#C2547A','#peak',spark(dayPk,'#C2547A'))+
+  kpi('Highest-consuming location',B[top].short,pct(BT[top]/TOTAL)+' of total','#5B73D6','#buildings')+
+  kpi('Active anomalies',ev.length,'abnormal readings this month','#D8443B','#anomalies')+
+  kpi('Estimated CO₂',f1(e1)+' t',dlt((e1/e0-1)*100,true)+' vs '+monthName(-1)+', after solar','#1E8A5A','#sustainability',spark(dayGrid,'#1E8A5A'))+
+  `</div>`+
+  card('Site load, hour by hour','Every reading this month. Red dots are flagged readings; click one to inspect it.',box('cHero',300),'stack')+
+  `<div class="g12">`+
+  card('Where the energy goes','Click a slice to open that location.',box('cMix',260))+
+  card('A typical day','Average site load by hour. The shaded band is the peak window.',box('cDay',260))+
+  `</div><div class="g2">`+
+  card('Flagged readings',ev.length?'Click to see how each compares with normal.':'',ev.length?ev.slice(0,5).map(r=>`<button class="ev" data-go="#anomalies" data-a="${ek(r)}"><b>${B[r.b].name}: ${f1(r.kwh)} kWh at ${hr(r.h)}</b><span>${dtl(r.d,r.h)} · normal ${f1(r.lo)}–${f1(r.hi)} kWh</span></button>`).join(''):'<div class="empty">Nothing is outside its normal range.</div>')+
+  card('What the data says','','<div style="display:grid;gap:10px">'+insights().slice(0,3).map(insCard).join('')+`</div><p style="margin:12px 0 0"><a href="#insights">See all insights</a></p>`)+
+  `</div>`+foot('All figures are demo estimates generated from fictional data. Cost uses a flat tariff you can change on the Cost analysis page.');
+ const labels=[],vals=[],mk=[];
+ for(let d=0;d<DAYS;d++)for(let h=0;h<24;h++){labels.push(dayLbl(d)+' '+hr(h));vals.push(+TOT[d][h].toFixed(1));mk.push(null)}
+ ev.forEach(r=>{mk[r.d*24+r.h]=+TOT[r.d][r.h].toFixed(1)});
+ const hero=chart('cHero',{type:'line',data:{labels,datasets:[
+  {label:'Site load (kWh)',data:vals,borderColor:'#0F8E98',backgroundColor:alpha('#0F8E98',.12),fill:true,pointRadius:0,borderWidth:1.3,tension:.2},
+  {label:'Flagged reading',data:mk,showLine:false,pointRadius:6,pointHoverRadius:8,pointHitRadius:10,pointBackgroundColor:'#D8443B',pointBorderColor:css('--panel'),pointBorderWidth:2}]},
+  options:base({plugins:{legend:{display:true}},scales:{x:{ticks:{maxTicksLimit:10,callback:function(v){return this.getLabelForValue(v).split(' ').slice(0,2).join(' ')}}},y:ytitle('kWh per hour')}})});
+ hero.options.onClick=(e,_,c)=>{const els=c.getElementsAtEventForMode(e,'nearest',{intersect:true},true).filter(x=>x.datasetIndex===1);
+  if(els.length){const r=ev.find(x=>x.d*24+x.h===els[0].index);if(r){S.sel.a=ek(r);go('#anomalies')}}};
+ chart('cMix',{type:'doughnut',data:{labels:B.map(b=>b.short),datasets:[{data:BT.map(Math.round),backgroundColor:B.map(b=>b.color),borderWidth:2,borderColor:css('--panel')}]},
+  options:{responsive:true,maintainAspectRatio:false,cutout:'60%',plugins:{legend:{position:'right',labels:{usePointStyle:true,boxWidth:8}},tooltip:{callbacks:{label:c=>`${c.label}: ${fmt(c.parsed)} kWh (${pct(c.parsed/TOTAL)})`}}},
+   onClick:(e,els)=>{if(els.length){S.sel.b=els[0].index;go('#buildings')}}}});
+ const w=peakWin(S.pw);
+ chart('cDay',{type:'line',data:{labels:[...Array(24).keys()].map(h=>hr(h)),datasets:[
+  {label:'Weekday',data:WD.map(v=>+v.toFixed(1)),borderColor:'#0F8E98',pointRadius:0,borderWidth:2.2,tension:.3},
+  {label:'Weekend',data:WE.map(v=>+v.toFixed(1)),borderColor:'#98A6AC',pointRadius:0,borderWidth:2,borderDash:[5,4],tension:.3}]},
+  options:base({plugins:{legend:{display:true},bands:{list:[{from:w,to:w+S.pw-1,color:'rgba(240,168,27,.2)'}]}},scales:{y:ytitle('average kWh per hour'),x:{ticks:{maxTicksLimit:8}}}})});
+};
+
+/* ---------- Consumption ---------- */
+const TB={all:[0,24],night:[0,6],morning:[6,12],afternoon:[12,18],evening:[18,24]};
+function fv(r){const c=S.c,t=TB[c.tb];if(r.h<t[0]||r.h>=t[1])return 0;if(c.b!=='all'&&r.b!==+c.b)return 0;return r.kwh*(c.eq==='all'?1:EQF(r.b,r.h)[c.eq])}
+const weekOf=d=>Math.floor((d+(date(0).getDay()+6)%7)/7);
+function consSeries(){
+ const c=S.c,d0=DAYS-c.range,bs=c.b==='all'?B.map((_,i)=>i):[+c.b],t=TB[c.tb];
+ if(c.g==='hourly'){const labels=[],keys=[],vals=[];
+  for(let d=d0;d<DAYS;d++)for(let h=0;h<24;h++){labels.push(dayLbl(d)+' '+hr(h));keys.push({d0:d,d1:d,h0:h,h1:h+1});
+   vals.push(h>=t[0]&&h<t[1]?+sum(bs.map(b=>fv(RI[d][h][b]))).toFixed(1):null)}
+  return{labels,keys,sets:[{label:'Site load',data:vals,color:'#0F8E98'}],bs};}
+ if(c.g==='daily'){const labels=[],keys=[];for(let d=d0;d<DAYS;d++){labels.push(dayLbl(d));keys.push({d0:d,d1:d,h0:0,h1:24})}
+  return{labels,keys,bs,sets:bs.map(b=>({label:B[b].short,color:B[b].color,data:keys.map(k=>+sum([...Array(24).keys()].map(h=>fv(RI[k.d0][h][b]))).toFixed(1))}))};}
+ const wk={};for(let d=d0;d<DAYS;d++){(wk[weekOf(d)]=wk[weekOf(d)]||[]).push(d)}
+ const ws=Object.values(wk),keys=ws.map(a=>({d0:a[0],d1:a[a.length-1],h0:0,h1:24})),
+  labels=ws.map(a=>'From '+dayLbl(a[0])+(a.length<7?' ('+a.length+' d)':''));
+ return{labels,keys,bs,sets:bs.map(b=>({label:B[b].short,color:B[b].color,data:keys.map(k=>{let s=0;for(let d=k.d0;d<=k.d1;d++)for(let h=0;h<24;h++)s+=fv(RI[d][h][b]);return +s.toFixed(1)})}))};
+}
+function detailRange(k,title,sub){
+ const rows=B.map((b,bi)=>{let v=0,full=0,flag=0,rr=null;
+  for(let d=k.d0;d<=k.d1;d++)for(let h=k.h0;h<k.h1;h++){const r=RI[d][h][bi];v+=fv(r);full+=r.kwh;if(r.z>S.k&&r.kwh>(1+S.up)*r.base)flag++;rr=r}
+  return{bi,v,full,flag,rr}}).filter(r=>S.c.b==='all'||r.bi===+S.c.b);
+ const tot=sum(rows.map(r=>r.v)),single=k.d0===k.d1&&k.h1-k.h0===1,eqOn=S.c.eq==='all';
+ let pk={v:-1,d:0,h:0};
+ if(!single)for(let d=k.d0;d<=k.d1;d++)for(let h=k.h0;h<k.h1;h++){const v=sum(rows.map(r=>fv(RI[d][h][r.bi])));if(v>pk.v)pk={v,d,h}}
+ const eq={};EQ.forEach(e=>eq[e.k]=0);
+ if(eqOn)for(let d=k.d0;d<=k.d1;d++)for(let h=k.h0;h<k.h1;h++)rows.forEach(r=>{const f=EQF(r.bi,h),v=fv(RI[d][h][r.bi]);EQ.forEach(e=>eq[e.k]+=v*f[e.k])});
+ const eqs=EQ.slice().sort((a,b)=>eq[b.k]-eq[a.k]).filter(e=>eq[e.k]>0).slice(0,6);
+ const out=`<div class="facts"><div><em>Consumption</em><strong>${f1(tot)} kWh</strong></div><div><em>Cost at ₹${S.rate.toFixed(2)}</em><strong>${inr(tot*S.rate)}</strong></div>`+
+  (single?'':`<div><em>Busiest hour</em><strong>${hr(pk.h)} on ${dayLbl(pk.d)}</strong></div>`)+`</div>`+
+  `<div class="g2" style="margin:0"><div class="scroll"><table><tr><th>Location</th><th class="n">kWh</th>${single&&eqOn?'<th class="n">Normal range</th>':''}<th></th></tr>`+
+  rows.map(r=>`<tr><td><span class="dot" style="background:${B[r.bi].color}"></span>${B[r.bi].short}</td><td class="n">${f1(r.v)}</td>${single&&eqOn?`<td class="n">${f1(r.rr.lo)}–${f1(r.rr.hi)}</td>`:''}<td>${r.flag?'<span class="tag">Flagged</span>':''}</td></tr>`).join('')+`</table></div>`+
+  (eqOn?`<div><table><tr><th>Equipment (estimated split)</th><th class="n">kWh</th></tr>${eqs.map(e=>`<tr><td><span class="dot" style="background:${e.c}"></span>${e.n}</td><td class="n">${f1(eq[e.k])}</td></tr>`).join('')}</table></div>`:'<div class="sub">Equipment split is hidden while an equipment filter is on.</div>')+`</div>`;
+ $('#detail').innerHTML=card(title,sub,out);
+}
+function showCons(i,S1){
+ const g=S.c.g,k=S1.keys[i];
+ if(g==='hourly')detailRange(k,'Reading at '+dtl(k.d0,k.h0),'One hour, as filtered above.');
+ else if(g==='daily')detailRange(k,DOW[date(k.d0).getDay()]+' '+dayLbl(k.d0),'Whole day, as filtered above.');
+ else detailRange(k,S1.labels[i],'Days '+dayLbl(k.d0)+' to '+dayLbl(k.d1)+'.');
+}
+const bShare=()=>S.c.b==='all'?1:BT[+S.c.b]/TOTAL;
+function drawCons(){
+ killCharts();
+ const c=S.c,S1=consSeries(),isLine=c.g==='hourly',monthly=c.g==='monthly',yoy=c.g==='yoy',sh=bShare();
+ const heads={hourly:'Hourly consumption',daily:'Daily consumption',weekly:'Weekly trend',monthly:'Monthly trend, 24 months',yoy:'Year-over-year comparison'};
+ $('#consOut').innerHTML=card(heads[c.g],(monthly||yoy)?'Location filter applies; date, equipment and time filters apply to the hourly, daily and weekly views. Click a point for detail.':'Click a point to see the readings behind it. Filters above apply.',box('cCons',340))+'<div id="detail" class="stack" style="margin-top:16px">'+card('Reading detail','',`<div class="empty">Select a point on the chart to see its underlying readings.</div>`)+'</div>';
+ let cfg;
+ if(monthly){const v=MONTHLY.map(x=>Math.round(x*sh));
+  cfg={type:'bar',data:{labels:MONTHLY.map((_,i)=>mLabel(i)),datasets:[{label:'kWh',data:v,backgroundColor:v.map((_,i)=>i===23?'#0F8E98':alpha('#0F8E98',.45)),borderRadius:3}]},options:base({scales:{y:ytitle('kWh')}})};
+  cfg.options.onClick=(e,els)=>{if(!els.length)return;const i=els[0].index,m=v[i],p=i>0?v[i-1]:null,y=i>=12?v[i-12]:null;
+   $('#detail').innerHTML=card(mLabel(i),'Monthly total',`<div class="facts"><div><em>Consumption</em><strong>${fmt(m)} kWh</strong></div><div><em>Cost at ₹${S.rate.toFixed(2)}</em><strong>${inr(m*S.rate)}</strong></div>${p?`<div><em>Change vs previous month</em><strong>${sgn((m/p-1)*100)}</strong></div>`:''}${y?`<div><em>Change vs same month last year</em><strong>${sgn((m/y-1)*100)}</strong></div>`:''}</div>`)}}
+ else if(yoy){const a=MONTHLY.slice(0,12).map(x=>Math.round(x*sh)),b=MONTHLY.slice(12).map(x=>Math.round(x*sh));
+  cfg={type:'line',data:{labels:[...Array(12).keys()].map(i=>M[(9+i)%12]),datasets:[
+   {label:'Oct 2024 to Sep 2025',data:a,borderColor:'#98A6AC',backgroundColor:'#98A6AC',borderWidth:2,tension:.3,pointRadius:3},
+   {label:'Oct 2025 to Sep 2026',data:b,borderColor:'#0F8E98',backgroundColor:'#0F8E98',borderWidth:2.5,tension:.3,pointRadius:3}]},
+   options:base({plugins:{legend:{display:true}},scales:{y:ytitle('kWh')}})};
+  cfg.options.onClick=(e,els)=>{if(!els.length)return;const i=els[0].index;
+   $('#detail').innerHTML=card(M[(9+i)%12]+' compared','Same month, one year apart',`<div class="facts"><div><em>${mLabel(i)}</em><strong>${fmt(a[i])} kWh</strong></div><div><em>${mLabel(i+12)}</em><strong>${fmt(b[i])} kWh</strong></div><div><em>Change</em><strong>${sgn((b[i]/a[i]-1)*100)}</strong></div><div><em>Cost difference at ₹${S.rate.toFixed(2)}</em><strong>${inr((b[i]-a[i])*S.rate)}</strong></div></div>`)}}
+ else{
+  const stacked=!isLine&&S1.bs.length>1;
+  cfg={type:isLine?'line':'bar',data:{labels:S1.labels,datasets:S1.sets.map(s=>isLine?{label:s.label,data:s.data,borderColor:s.color,backgroundColor:alpha(s.color,.12),fill:true,pointRadius:0,pointHoverRadius:5,borderWidth:1.4,tension:.2,spanGaps:false}:{label:s.label,data:s.data,backgroundColor:s.color,stack:'s',borderRadius:stacked?0:3})},
+   options:base({plugins:{legend:{display:stacked},tooltip:{callbacks:stackTip(S1.bs.length)}},scales:{x:{stacked:stacked,ticks:{maxTicksLimit:isLine?10:14,callback:function(v){const l=this.getLabelForValue(v);return isLine?l.split(' ').slice(0,2).join(' '):l}}},y:Object.assign({stacked:stacked},ytitle('kWh'))}})};
+  cfg.options.onClick=(e,els)=>{if(els.length)showCons(els[0].index,S1)};
+ }
+ chart('cCons',cfg);
+}
+PG.consumption=()=>{
+ const c=S.c;
+ $('#view').innerHTML=`<div class="bar sticky">
+  <div class="seg" id="gSeg" role="group" aria-label="Time period">${[['hourly','Hourly'],['daily','Daily'],['weekly','Weekly'],['monthly','Monthly'],['yoy','Year over year']].map(x=>`<button data-g="${x[0]}" class="${c.g===x[0]?'on':''}">${x[1]}</button>`).join('')}</div>
+  <label>Date range<select id="fR">${[7,14,30].map(n=>`<option value="${n}" ${c.range===n?'selected':''}>Last ${n} days</option>`).join('')}</select></label>
+  <label>Building / department<select id="fB"><option value="all">All locations</option>${B.map((b,i)=>`<option value="${i}" ${c.b==i&&c.b!=='all'?'selected':''}>${b.name}</option>`).join('')}</select></label>
+  <label>Equipment<select id="fE"><option value="all">All equipment</option>${EQ.map(e=>`<option value="${e.k}" ${c.eq===e.k?'selected':''}>${e.n}</option>`).join('')}</select></label>
+  <label>Time of day<select id="fT">${[['all','All day'],['night','Night, 12–6 AM'],['morning','Morning, 6 AM–12 PM'],['afternoon','Afternoon, 12–6 PM'],['evening','Evening, 6 PM–12 AM']].map(x=>`<option value="${x[0]}" ${c.tb===x[0]?'selected':''}>${x[1]}</option>`).join('')}</select></label>
+  <button class="btn" id="fX">Reset filters</button></div><div id="consOut"></div>`+
+  foot('Equipment values are estimated splits of each location’s metered load. Weekly buckets run Monday to Sunday, so the first and last weeks can be partial.');
+ $('#gSeg').onclick=e=>{const g=e.target.dataset.g;if(!g)return;c.g=g;document.querySelectorAll('#gSeg button').forEach(b=>b.classList.toggle('on',b.dataset.g===g));drawCons()};
+ $('#fR').onchange=e=>{c.range=+e.target.value;drawCons()};
+ $('#fB').onchange=e=>{c.b=e.target.value;drawCons()};
+ $('#fE').onchange=e=>{c.eq=e.target.value;drawCons()};
+ $('#fT').onchange=e=>{c.tb=e.target.value;drawCons()};
+ $('#fX').onclick=()=>{Object.assign(S.c,{range:30,b:'all',eq:'all',tb:'all'});PG.consumption()};
+ drawCons();
+};
+
+/* ---------- Buildings ---------- */
+PG.buildings=()=>{
+ if(S.sel.b!==null)return buildingDetail(S.sel.b);
+ const rows=B.map((b,i)=>({i,s:bStats(i)})).sort((a,b)=>b.s.kwh-a.s.kwh);
+ $('#view').innerHTML=card('Compare locations','Click any row to open its detailed analytics.',
+  `<div class="scroll"><table><tr><th>Location</th><th class="n">Consumption</th><th class="n">Share</th><th class="n">Cost</th><th style="width:22%">Efficiency</th><th class="n">Flags</th></tr>`+
+  rows.map(r=>`<tr class="click" tabindex="0" data-go="#buildings" data-b="${r.i}"><td><span class="dot" style="background:${B[r.i].color}"></span><b>${B[r.i].name}</b></td><td class="n">${fmt(r.s.kwh)} kWh</td><td class="n">${pct(r.s.share)}</td><td class="n">${inrL(r.s.cost)}</td><td><div style="display:flex;align-items:center;gap:8px"><span style="min-width:34px">${B[r.i].eff}%</span><div class="meter" style="flex:1"><i style="width:${B[r.i].eff}%;background:${B[r.i].eff<80?'#D8443B':B[r.i].eff<88?'#E0A21B':'#1E8A5A'}"></i></div></div></td><td class="n">${r.s.ev||'–'}</td></tr>`).join('')+`</table></div>`,'stack')+
+  `<div class="g2">`+card('Consumption by location','',box('cBc',260))+card('Cost by location',`At ₹${S.rate.toFixed(2)}/kWh`,box('cBk',260))+`</div>`+
+  foot('Efficiency is a fictional benchmark score per location. Cost uses the tariff set on the Cost analysis page.');
+ document.querySelectorAll('tr.click').forEach(t=>t.addEventListener('keydown',e=>{if(e.key==='Enter')t.click()}));
+ const opt=(unit,col)=>base({indexAxis:'y',scales:{x:Object.assign({grid:{color:css('--grid')}},ytitle(unit)),y:{grid:{display:false}}},onClick:(e,els)=>{if(els.length){S.sel.b=rows[els[0].index].i;go('#buildings')}}});
+ chart('cBc',{type:'bar',data:{labels:rows.map(r=>B[r.i].short),datasets:[{data:rows.map(r=>Math.round(r.s.kwh)),backgroundColor:rows.map(r=>B[r.i].color),borderRadius:3}]},options:opt('kWh')});
+ chart('cBk',{type:'bar',data:{labels:rows.map(r=>B[r.i].short),datasets:[{data:rows.map(r=>Math.round(r.s.cost)),backgroundColor:rows.map(r=>B[r.i].color),borderRadius:3}]},options:opt('₹')});
+};
+function buildingDetail(i){
+ const b=B[i],s=bStats(i),evs=events().filter(r=>r.b===i);
+ const dd=[...Array(DAYS).keys()].map(d=>sum(RI[d].map(hs=>hs[i].kwh)));
+ const ma=dd.map((_,d)=>{const a=dd.slice(Math.max(0,d-6),d+1);return +(sum(a)/a.length).toFixed(1)});
+ const wd=Array(24).fill(0),we=Array(24).fill(0);let nd=0,ne=0;
+ for(let d=0;d<DAYS;d++){const w=date(d).getDay(),e=w===0||w===6;e?ne++:nd++;for(let h=0;h<24;h++)(e?we:wd)[h]+=RI[d][h][i].kwh}
+ const eqv=EQ.map(e=>({e,v:EQB[e.k][i]})).filter(x=>x.v>0.5).sort((a,b)=>b.v-a.v);
+ $('#view').innerHTML=`<div class="back"><button class="btn" id="bk">← All locations</button></div>`+
+  `<div class="kpis">`+
+  kpi('Consumption',fmt(s.kwh)+' kWh',pct(s.share)+' of the site total',b.color)+
+  kpi('Estimated cost',inr(s.cost),`at ₹${S.rate.toFixed(2)}/kWh`,'#E0A21B')+
+  kpi('Efficiency score',b.eff+'%','fictional benchmark','#4C93C9')+
+  kpi('Peak demand',Math.round(s.peak.kwh)+' kW',dtl(s.peak.d,s.peak.h),'#C2547A')+
+  kpi('Average load',f1(s.avg)+' kW','all hours','#5B73D6')+
+  kpi('Flagged readings',s.ev||'None','current sensitivity','#D8443B',s.ev?'#anomalies':'')+`</div>`+
+  `<h2 style="font-size:20px;margin:6px 0 14px">${b.name}</h2>`+
+  `<div class="g21">`+card('Daily consumption','Bars are each day; the line is a 7-day moving average.',box('cBd',280))+card('Equipment mix','Estimated split',box('cBe',280))+`</div>`+
+  `<div class="g2">`+card('Average day','Weekday against weekend, kWh per hour',box('cBp',260))+
+  card('Flagged readings','',evs.length?evs.map(r=>`<button class="ev" data-go="#anomalies" data-a="${ek(r)}"><b>${f1(r.kwh)} kWh at ${hr(r.h)}</b><span>${dtl(r.d,r.h)} · normal ${f1(r.lo)}–${f1(r.hi)} kWh</span></button>`).join(''):'<div class="empty">No flagged readings for this location.</div>')+`</div>`;
+ $('#bk').onclick=()=>{S.sel.b=null;PG.buildings()};
+ chart('cBd',{type:'bar',data:{labels:dd.map((_,d)=>dayLbl(d)),datasets:[
+  {type:'line',label:'7-day average',data:ma,borderColor:css('--ink'),borderWidth:2,pointRadius:0,tension:.3,order:0},
+  {label:'Daily kWh',data:dd.map(v=>+v.toFixed(1)),backgroundColor:alpha(b.color,.75),borderRadius:3,order:1}]},
+  options:base({plugins:{legend:{display:true}},scales:{x:{ticks:{maxTicksLimit:10}},y:ytitle('kWh')}})});
+ chart('cBe',{type:'doughnut',data:{labels:eqv.map(x=>x.e.n),datasets:[{data:eqv.map(x=>Math.round(x.v)),backgroundColor:eqv.map(x=>x.e.c),borderColor:css('--panel'),borderWidth:2}]},
+  options:{responsive:true,maintainAspectRatio:false,cutout:'58%',plugins:{legend:{position:'bottom',labels:{usePointStyle:true,boxWidth:8}},tooltip:{callbacks:{label:c=>`${c.label}: ${fmt(c.parsed)} kWh`}}}}});
+ chart('cBp',{type:'line',data:{labels:[...Array(24).keys()].map(hr),datasets:[
+  {label:'Weekday',data:wd.map(v=>+(v/nd).toFixed(1)),borderColor:b.color,borderWidth:2.2,pointRadius:0,tension:.3},
+  {label:'Weekend',data:we.map(v=>+(v/ne).toFixed(1)),borderColor:'#98A6AC',borderWidth:2,borderDash:[5,4],pointRadius:0,tension:.3}]},
+  options:base({plugins:{legend:{display:true}},scales:{x:{ticks:{maxTicksLimit:8}},y:ytitle('kWh per hour')}})});
+}
+
+/* ---------- Equipment ---------- */
+PG.equipment=()=>{
+ if(S.sel.e)return equipmentDetail(S.sel.e);
+ const list=EQ.slice().sort((a,b)=>EQT[b.k]-EQT[a.k]);
+ $('#view').innerHTML=`<div class="g12">`+card('Share of consumption','Click a slice to open its history.',box('cEq',300))+
+  card('Ranked by consumption','Click any item to open its consumption history.',`<table>`+list.map(e=>`<tr class="click" tabindex="0" data-go="#equipment" data-e="${e.k}"><td style="width:32%"><span class="dot" style="background:${e.c}"></span><b>${e.n}</b></td><td class="n" style="width:20%">${fmt(EQT[e.k])} kWh</td><td class="n" style="width:12%">${pct(EQT[e.k]/TOTAL)}</td><td><div class="meter"><i style="width:${EQT[e.k]/EQT[list[0].k]*100}%;background:${e.c}"></i></div></td></tr>`).join('')+`</table>`)+`</div>`+
+  foot('Equipment values are demo estimates: each location’s metered load split by a fictional equipment mix that shifts through the day.');
+ document.querySelectorAll('tr.click').forEach(t=>t.addEventListener('keydown',e=>{if(e.key==='Enter')t.click()}));
+ chart('cEq',{type:'doughnut',data:{labels:list.map(e=>e.n),datasets:[{data:list.map(e=>Math.round(EQT[e.k])),backgroundColor:list.map(e=>e.c),borderColor:css('--panel'),borderWidth:2}]},
+  options:{responsive:true,maintainAspectRatio:false,cutout:'58%',plugins:{legend:{position:'bottom',labels:{usePointStyle:true,boxWidth:8}},tooltip:{callbacks:{label:c=>`${c.label}: ${fmt(c.parsed)} kWh (${pct(c.parsed/TOTAL)})`}}},
+   onClick:(e,els)=>{if(els.length){S.sel.e=list[els[0].index].k;go('#equipment')}}}});
+};
+function equipmentDetail(k){
+ const e=EQ.find(x=>x.k===k),pkh=EQHR[k].indexOf(Math.max(...EQHR[k]));
+ const bl=B.map((b,i)=>({i,v:EQB[k][i]})).filter(x=>x.v>0.5).sort((a,b)=>b.v-a.v);
+ $('#view').innerHTML=`<div class="back"><button class="btn" id="bk">← All equipment</button></div><h2 style="font-size:20px;margin:0 0 14px"><span class="dot" style="background:${e.c}"></span>${e.n}</h2>`+
+  `<div class="kpis">`+kpi('Consumption',fmt(EQT[k])+' kWh',pct(EQT[k]/TOTAL)+' of the site total',e.c)+kpi('Estimated cost',inr(EQT[k]*S.rate),`at ₹${S.rate.toFixed(2)}/kWh`,'#E0A21B')+
+  kpi('Busiest hour',hr(pkh),f1(EQHR[k][pkh])+' kWh on average','#C2547A')+kpi('Largest user',B[bl[0].i].short,pct(bl[0].v/EQT[k],0)+' of its energy','#5B73D6')+`</div>`+
+  card('Consumption history','Daily kWh by location',box('cEh',300),'stack')+
+  `<div class="g2">`+card('Average day','kWh per hour',box('cEp',240))+card('By location','',`<table>${bl.map(x=>`<tr><td><span class="dot" style="background:${B[x.i].color}"></span>${B[x.i].short}</td><td class="n">${fmt(x.v)} kWh</td><td style="width:35%"><div class="meter"><i style="width:${x.v/bl[0].v*100}%;background:${B[x.i].color}"></i></div></td></tr>`).join('')}</table>`)+`</div>`;
+ $('#bk').onclick=()=>{S.sel.e=null;PG.equipment()};
+ chart('cEh',{type:'bar',data:{labels:[...Array(DAYS).keys()].map(dayLbl),datasets:bl.map(x=>({label:B[x.i].short,backgroundColor:B[x.i].color,stack:'s',data:[...Array(DAYS).keys()].map(d=>+sum(RI[d].map((hs,h)=>hs[x.i].kwh*EQF(x.i,h)[k])).toFixed(1))}))},
+  options:base({plugins:{legend:{display:bl.length>1},tooltip:{callbacks:stackTip(bl.length)}},scales:{x:{stacked:true,ticks:{maxTicksLimit:10}},y:Object.assign({stacked:true},ytitle('kWh'))}})});
+ chart('cEp',{type:'line',data:{labels:[...Array(24).keys()].map(hr),datasets:[{data:EQHR[k].map(v=>+v.toFixed(1)),borderColor:e.c,backgroundColor:alpha(e.c,.15),fill:true,pointRadius:0,borderWidth:2.2,tension:.3}]},options:base({scales:{x:{ticks:{maxTicksLimit:8}},y:ytitle('kWh per hour')}})});
+}
+
+/* ---------- Peak demand ---------- */
+function heatColor(t){const dk=theme==='dark',a=dk?[22,48,58]:[232,243,244],b=dk?[76,195,204]:[11,91,98];return `rgb(${a.map((v,i)=>Math.round(v+(b[i]-v)*t)).join(',')})`}
+PG.peak=()=>{
+ const n=S.pw,h0=peakWin(n),w=winShare(n);
+ const byDow=Array.from({length:7},()=>[]);DAYT.forEach((v,d)=>byDow[date(d).getDay()].push(v));
+ const dm=byDow.map(a=>sum(a)/a.length),order=[1,2,3,4,5,6,0],bestDow=dm.indexOf(Math.max(...dm));
+ const avg=TOTAL/(DAYS*24),hot=[];for(let d=0;d<DAYS;d++)for(let h=0;h<24;h++)hot.push({d,h,v:TOT[d][h]});hot.sort((a,b)=>b.v-a.v);
+ const grid=Array.from({length:7},()=>Array(24).fill(0)),cnt=Array(7).fill(0);
+ for(let d=0;d<DAYS;d++){const w=date(d).getDay();cnt[w]++;for(let h=0;h<24;h++)grid[w][h]+=TOT[d][h]}
+ let gmax=0,gmin=1e9;order.forEach(w=>{for(let h=0;h<24;h++){grid[w][h]/=cnt[w];gmax=Math.max(gmax,grid[w][h]);gmin=Math.min(gmin,grid[w][h])}});
+ $('#view').innerHTML=`<div class="bar"><label>Peak window length<div class="seg" id="pwSeg">${[2,4,6].map(x=>`<button data-n="${x}" class="${n===x?'on':''}">${x} hours</button>`).join('')}</div></label></div>`+
+  `<div class="kpis">`+kpi('Peak hours',hrRange(h0,n),'highest average weekday load','#E0A21B')+
+  kpi('Peak day',DOW[bestDow]+'s','average '+fmt(dm[bestDow])+' kWh per day','#C2547A')+
+  kpi('Maximum demand',Math.round(MAXH.v)+' kW',dtl(MAXH.d,MAXH.h),'#D8443B')+
+  kpi('Average demand',Math.round(avg)+' kW','load factor '+pct(avg/MAXH.v,0),'#0F8E98')+
+  kpi('Peak-window cost',inr(w.kwh*S.rate),pct(w.share,0)+' of the monthly bill','#5B73D6')+`</div>`+
+  `<div class="g2">`+card('Average weekday demand','The shaded band is the peak window',box('cPk',280))+card('Demand by day of week','Average kWh per day',box('cPd',280))+`</div>`+
+  card('When demand builds','Average site load for each weekday and hour. Click a cell for the value. Outlined cells fall in the peak window.',`<div class="heatwrap"><div class="heat" id="heat"></div></div><div id="hcOut" class="sub" style="margin:10px 0 0">&nbsp;</div>`,'stack')+
+  card('Ten highest-demand hours','',`<div class="scroll"><table><tr><th>When</th><th class="n">Demand</th><th>Main driver</th></tr>${hot.slice(0,10).map(x=>{const top=B.map((_,i)=>i).sort((a,b)=>RI[x.d][x.h][b].kwh-RI[x.d][x.h][a].kwh)[0];return `<tr><td>${dtl(x.d,x.h)}</td><td class="n">${Math.round(x.v)} kW</td><td><span class="dot" style="background:${B[top].color}"></span>${B[top].short}</td></tr>`}).join('')}</table></div>`);
+ $('#pwSeg').onclick=e=>{const x=e.target.dataset.n;if(x){S.pw=+x;PG.peak()}};
+ let hh='<div></div>'+[...Array(24).keys()].map(h=>`<div class="hh">${h%3===0?h:''}</div>`).join('');
+ order.forEach(wd=>{hh+=`<div class="lab">${DOW[wd]}</div>`;for(let h=0;h<24;h++){const v=grid[wd][h],t=(v-gmin)/(gmax-gmin);hh+=`<button class="hc ${h>=h0&&h<h0+n?'pk':''}" style="background:${heatColor(t)}" data-v="${Math.round(v)}" data-l="${DOW[wd]}, ${hr(h)}" aria-label="${DOW[wd]} ${hr(h)} ${Math.round(v)} kilowatts"></button>`}});
+ $('#heat').innerHTML=hh;
+ $('#heat').onclick=e=>{const c=e.target.closest('.hc');if(c)$('#hcOut').innerHTML=`<b>${c.dataset.l}</b>: average ${c.dataset.v} kW`};
+ chart('cPk',{type:'line',data:{labels:[...Array(24).keys()].map(hr),datasets:[{label:'Weekday',data:WD.map(v=>+v.toFixed(1)),borderColor:'#0F8E98',backgroundColor:alpha('#0F8E98',.12),fill:true,pointRadius:0,borderWidth:2.2,tension:.3}]},
+  options:base({plugins:{bands:{list:[{from:h0,to:h0+n-1,color:'rgba(240,168,27,.25)'}]}},scales:{x:{ticks:{maxTicksLimit:8}},y:ytitle('kW')}})});
+ chart('cPd',{type:'bar',data:{labels:order.map(w=>DOW[w]),datasets:[{data:order.map(w=>Math.round(dm[w])),backgroundColor:order.map(w=>w===bestDow?'#E0A21B':alpha('#0F8E98',.6)),borderRadius:3}]},options:base({scales:{y:ytitle('kWh per day')}})});
+};
+
+/* ---------- Anomalies ---------- */
+PG.anomalies=()=>{
+ $('#view').innerHTML=`<div class="bar"><label><span>Sensitivity: flag readings more than <b id="kOut">${S.k.toFixed(1)}</b> deviations above normal</span><input type="range" id="kR" min="2" max="8" step="0.5" value="${S.k}" style="width:min(340px,80vw)"></label>
+  <label>Minimum increase<select id="uS">${[[.10,'10% above normal'],[.25,'25% above normal'],[.50,'50% above normal']].map(x=>`<option value="${x[0]}" ${S.up===x[0]?'selected':''}>${x[1]}</option>`).join('')}</select></label></div><div id="anOut"></div>`+
+  foot('Method: for each location, hour of day and weekday/weekend type, the system takes the median reading and the median absolute deviation across the month. A reading is flagged when it is far above that baseline (robust z-score) and also exceeds the minimum increase. Normal range shown is the median plus or minus 2.5 deviations.');
+ $('#kR').oninput=e=>{S.k=+e.target.value;$('#kOut').textContent=S.k.toFixed(1);drawAn()};
+ $('#uS').onchange=e=>{S.up=+e.target.value;drawAn()};
+ drawAn();
+};
+function drawAn(){
+ killCharts();
+ const ev=events();let sel=ev.find(r=>ek(r)===S.sel.a)||ev[0];
+ const left=`<div class="card"><h2>${ev.length} abnormal consumption event${ev.length===1?'':'s'}</h2><div class="sub">Select one to compare it with normal.</div><div style="max-height:560px;overflow:auto">`+
+  (ev.length?ev.map(r=>`<button class="ev ${sel&&ek(r)===ek(sel)?'on':''}" data-k="${ek(r)}"><b><span class="dot" style="background:${B[r.b].color}"></span>${B[r.b].short}, ${hr(r.h)}</b><span>${DOW[date(r.d).getDay()]} ${dayLbl(r.d)} · ${f1(r.kwh)} kWh · ${sgn((r.kwh/r.base-1)*100)} vs typical</span></button>`).join(''):'<div class="empty">No readings exceed these thresholds. Lower the sensitivity to see more.</div>')+`</div></div>`;
+ let right='';
+ if(sel){const ex=sel.kwh-sel.base;
+  right=card('Unusual consumption detected',`${B[sel.b].name} · ${dtl(sel.d,sel.h)}`,
+   `<div class="facts"><div class="bad"><em>Consumption</em><strong>${f1(sel.kwh)} kWh</strong></div><div><em>Normal range</em><strong>${f1(sel.lo)}–${f1(sel.hi)} kWh</strong></div><div class="bad"><em>Difference vs typical</em><strong>${sgn((sel.kwh/sel.base-1)*100)}</strong></div><div><em>Extra energy</em><strong>${f1(ex)} kWh</strong></div><div><em>Extra cost</em><strong>${inr(ex*S.rate)}</strong></div></div>`+box('cAn',300)+
+   `<p class="sub" style="margin:10px 0 0">The shaded band is the normal range for this hour. The line shows that day, hour by hour.</p>`);}
+ $('#anOut').innerHTML=`<div class="g12">${left}<div>${right||card('Nothing to inspect','','<div class="empty">Choose a flagged reading, or lower the sensitivity.</div>')}</div></div>`;
+ document.querySelectorAll('#anOut .ev[data-k]').forEach(b=>b.onclick=()=>{S.sel.a=b.dataset.k;drawAn()});
+ if(!sel)return;
+ const hrs=[...Array(24).keys()],row=hrs.map(h=>RI[sel.d][h][sel.b]);
+ chart('cAn',{type:'line',data:{labels:hrs.map(hr),datasets:[
+  {label:'Normal low',data:row.map(r=>+r.lo.toFixed(1)),borderColor:'transparent',pointRadius:0,fill:false},
+  {label:'Normal range',data:row.map(r=>+r.hi.toFixed(1)),borderColor:'transparent',backgroundColor:'rgba(15,142,152,.16)',pointRadius:0,fill:'-1'},
+  {label:'Typical',data:row.map(r=>+r.base.toFixed(1)),borderColor:'#5B7078',borderDash:[5,4],borderWidth:1.5,pointRadius:0},
+  {label:'Actual',data:row.map(r=>+r.kwh.toFixed(1)),borderColor:css('--ink'),borderWidth:2.2,tension:.15,pointRadius:row.map((r,h)=>h===sel.h?7:2),pointBackgroundColor:row.map((r,h)=>h===sel.h?'#D8443B':css('--ink')),pointBorderColor:css('--panel'),pointBorderWidth:row.map((r,h)=>h===sel.h?2:0)}]},
+  options:base({plugins:{legend:{display:true,labels:{filter:i=>i.text!=='Normal low'}}},scales:{x:{ticks:{maxTicksLimit:8}},y:ytitle('kWh per hour')}})});
+}
+
+/* ---------- Cost ---------- */
+PG.cost=()=>{
+ $('#view').innerHTML=card('Cost simulator','Change the electricity rate and every figure on this page, and across the demo, recalculates.',
+  `<div class="rate"><input type="range" id="rR" min="5" max="14" step="0.25" value="${S.rate}" aria-label="Electricity rate in rupees per kWh"><output id="rO"></output><button class="btn" id="rX">Reset to ₹8.00</button></div>`,'stack')+`<div id="coOut"></div>`+
+  foot('Cost is kWh multiplied by a flat tariff. “Operating hour” means an hour when a location draws more than 70% of its average load. History and forecast costs use the tariff selected here.');
+ $('#rR').oninput=e=>{S.rate=+e.target.value;drawCost()};
+ $('#rX').onclick=()=>{S.rate=8;$('#rR').value=8;drawCost()};
+ drawCost();
+};
+function drawCost(){
+ killCharts();
+ const r=S.rate,cost=TOTAL*r,base8=TOTAL*8,F=forecast(S.fc);
+ $('#rO').textContent='₹'+r.toFixed(2)+'/kWh';
+ const dc=DAYT.map(v=>Math.round(v*r));
+ $('#coOut').innerHTML=`<div class="kpis">`+
+  kpi('Estimated monthly bill',inr(cost),r===8?'at the demo tariff':(cost>=base8?'<span class="up">+':'<span class="down">−')+inr(Math.abs(cost-base8))+' vs ₹8.00</span>','#E0A21B')+
+  kpi('Average daily cost',inr(cost/DAYS),'September 2026','#0F8E98')+
+  kpi('Cost per operating hour',inr(cost/sum(OPH)*5),'average across locations','#4C93C9')+
+  kpi('Estimated next 30 days',inr(F.total*r),fmt(F.total)+' kWh projected','#6A5BB0','#forecast')+
+  kpi('Bill after solar offset',inr(GRIDNET*r),'net of '+fmt(SOLTOT)+' kWh generated','#F0A81B','#solar')+`</div>`+
+  `<div class="g21">`+card('Daily cost','Rupees per day',box('cD',280))+card('Cost by location','',box('cL',280))+`</div>`+
+  `<div class="g2">`+card('Cost by equipment','Estimated split',box('cE',280))+card('Cost per operating hour','Rupees, by location',box('cO',280))+`</div>`+
+  card('Cost trend','Monthly kWh priced at the selected tariff; the last bar is the 30-day projection',box('cT',280));
+ chart('cD',{type:'bar',data:{labels:dc.map((_,d)=>dayLbl(d)),datasets:[{data:dc,backgroundColor:alpha('#E0A21B',.85),borderRadius:3}]},options:base({scales:{x:{ticks:{maxTicksLimit:10}},y:ytitle('₹')}})});
+ const ord=B.map((_,i)=>i).sort((a,b)=>BT[b]-BT[a]);
+ chart('cL',{type:'bar',data:{labels:ord.map(i=>B[i].short),datasets:[{data:ord.map(i=>Math.round(BT[i]*r)),backgroundColor:ord.map(i=>B[i].color),borderRadius:3}]},options:base({indexAxis:'y',scales:{y:{grid:{display:false}},x:Object.assign({grid:{color:css('--grid')}},ytitle('₹'))}})});
+ const eo=EQ.slice().sort((a,b)=>EQT[b.k]-EQT[a.k]);
+ chart('cE',{type:'bar',data:{labels:eo.map(e=>e.n),datasets:[{data:eo.map(e=>Math.round(EQT[e.k]*r)),backgroundColor:eo.map(e=>e.c),borderRadius:3}]},options:base({indexAxis:'y',scales:{y:{grid:{display:false}},x:Object.assign({grid:{color:css('--grid')}},ytitle('₹'))}})});
+ chart('cO',{type:'bar',data:{labels:B.map(b=>b.short),datasets:[{data:B.map((_,i)=>Math.round(BT[i]*r/OPH[i])),backgroundColor:B.map(b=>b.color),borderRadius:3}]},options:base({scales:{y:ytitle('₹ per operating hour')}})});
+ const labs=[...MONTHLY.slice(12).map((_,i)=>mLabel(i+12)),'Next 30 days'],vals=[...MONTHLY.slice(12).map(x=>Math.round(x*r)),Math.round(F.total*r)];
+ chart('cT',{type:'bar',data:{labels:labs,datasets:[{data:vals,backgroundColor:vals.map((_,i)=>i===12?alpha('#6A5BB0',.8):i===11?'#0F8E98':alpha('#0F8E98',.45)),borderRadius:3}]},options:base({scales:{y:ytitle('₹')}})});
+}
+
+/* ---------- Solar & grid ---------- */
+PG.solar=()=>{
+ const used=SOLTOT-EXCTOT,excHrs=EXC.reduce((a,d)=>a+d.filter(v=>v>0.5).length,0);
+ let peakSol=0;SOL.forEach(d=>d.forEach(v=>{if(v>peakSol)peakSol=v}));
+ const hrAvg=(fn)=>[...Array(24).keys()].map(h=>+(sum([...Array(DAYS).keys()].map(d=>fn(d,h)))/DAYS).toFixed(1));
+ $('#view').innerHTML=`<div class="kpis">`+
+  kpi('Total consumption',fmt(TOTAL)+' kWh','all locations','#0F8E98')+
+  kpi('Solar generation',fmt(SOLTOT)+' kWh','peak '+Math.round(peakSol)+' kW at midday','#F0A81B')+
+  kpi('Grid consumption',fmt(GRIDNET)+' kWh','net of solar generation','#5B73D6')+
+  kpi('Solar contribution',pct(SOLTOT/TOTAL),'of total consumption','#1E8A5A')+
+  kpi('Excess generation',fmt(EXCTOT)+' kWh',excHrs+' hours with more solar than load','#E0A21B')+`</div>`+
+  `<div class="g2">`+card('Average day: load, solar and grid draw','kWh per hour',box('cS1',280))+card('Daily solar and grid','Stacked kWh, together they equal the day’s consumption',box('cS2',280))+`</div>`+
+  `<div class="g2">`+card('Solar contribution by day','Share of the day’s consumption covered by solar',box('cS3',260))+card('Excess generation by day','kWh of solar above the load, mostly weekends',box('cS4',260))+`</div>`+
+  card('Monthly comparison','Solar and grid kWh, last 12 months',box('cS5',280))+
+  foot(`Net-metered view: grid consumption is total consumption minus solar generation. About ${fmt(used)} kWh of solar is used on site at the moment it is generated; the rest is exported. Fictional 480 kW rooftop installation.`);
+ const hrs=[...Array(24).keys()].map(hr);
+ chart('cS1',{type:'line',data:{labels:hrs,datasets:[
+  {label:'Consumption',data:hrAvg((d,h)=>TOT[d][h]),borderColor:'#0F8E98',pointRadius:0,borderWidth:2.2,tension:.3},
+  {label:'Solar',data:hrAvg((d,h)=>SOL[d][h]),borderColor:'#F0A81B',backgroundColor:alpha('#F0A81B',.25),fill:true,pointRadius:0,borderWidth:2,tension:.3},
+  {label:'Grid draw',data:hrAvg((d,h)=>Math.max(0,TOT[d][h]-SOL[d][h])),borderColor:'#5B73D6',borderDash:[5,4],pointRadius:0,borderWidth:2,tension:.3}]},
+  options:base({plugins:{legend:{display:true}},scales:{x:{ticks:{maxTicksLimit:8}},y:ytitle('kWh per hour')}})});
+ const dl=[...Array(DAYS).keys()].map(dayLbl);
+ chart('cS2',{type:'bar',data:{labels:dl,datasets:[{label:'Solar',data:SOLDAY.map(Math.round),backgroundColor:'#F0A81B',stack:'s'},{label:'Grid (net)',data:DAYT.map((v,d)=>Math.round(v-SOLDAY[d])),backgroundColor:'#5B73D6',stack:'s'}]},
+  options:base({plugins:{legend:{display:true},tooltip:{callbacks:stackTip(2)}},scales:{x:{stacked:true,ticks:{maxTicksLimit:10}},y:Object.assign({stacked:true},ytitle('kWh'))}})});
+ chart('cS3',{type:'line',data:{labels:dl,datasets:[{data:SOLDAY.map((v,d)=>+(v/DAYT[d]*100).toFixed(1)),borderColor:'#1E8A5A',backgroundColor:alpha('#1E8A5A',.12),fill:true,pointRadius:2,borderWidth:2,tension:.25}]},options:base({scales:{x:{ticks:{maxTicksLimit:10}},y:ytitle('%')}})});
+ chart('cS4',{type:'bar',data:{labels:dl,datasets:[{data:EXCDAY.map(Math.round),backgroundColor:alpha('#E0A21B',.85),borderRadius:3}]},options:base({scales:{x:{ticks:{maxTicksLimit:10}},y:ytitle('kWh')}})});
+ const m12=MONTHLY.slice(12);
+ chart('cS5',{type:'bar',data:{labels:m12.map((_,i)=>mLabel(i+12)),datasets:[{label:'Solar',data:m12.map((v,i)=>Math.round(v*SOLSH[i])),backgroundColor:'#F0A81B',stack:'s'},{label:'Grid (net)',data:m12.map((v,i)=>Math.round(v*(1-SOLSH[i]))),backgroundColor:'#5B73D6',stack:'s'}]},
+  options:base({plugins:{legend:{display:true},tooltip:{callbacks:stackTip(2)}},scales:{x:{stacked:true},y:Object.assign({stacked:true},ytitle('kWh'))}})});
+};
+
+/* ---------- Forecast ---------- */
+PG.forecast=()=>{
+ const F=forecast(S.fc),pkd=F.days.reduce((a,x)=>x.p>a.p?x:a,F.days[0]);
+ const wk=[];for(let i=0;i<F.days.length;i+=7)wk.push(F.days.slice(i,i+7));
+ $('#view').innerHTML=`<div class="bar"><div class="seg" id="scSeg" role="group" aria-label="Scenario">${Object.keys(SC).map(k=>`<button data-s="${k}" class="${S.fc===k?'on':''}">${SC[k].n}</button>`).join('')}</div></div>`+
+  `<div class="kpis">`+kpi('Expected next 30 days',fmt(F.total)+' kWh','1 to 30 October 2026','#6A5BB0')+
+  kpi('Projected change',sgn(F.growth*100),'vs September','#D8443B')+
+  kpi('Projected cost',inr(F.total*S.rate),`at ₹${S.rate.toFixed(2)}/kWh`,'#E0A21B','#cost')+
+  kpi('Highest projected day',dayLbl2(pkd.t),fmt(pkd.p)+' kWh','#C2547A')+`</div>`+
+  card('Historical data, trend and projected consumption','Daily kWh. The shaded band is a 90% range that widens further out.',box('cF',340),'stack')+
+  `<div class="g2">`+card('Projection by week','',`<table><tr><th>Week</th><th class="n">Projected kWh</th><th class="n">Cost</th></tr>${wk.map(w=>`<tr><td>${dayLbl2(w[0].t)} to ${dayLbl2(w[w.length-1].t)}</td><td class="n">${fmt(sum(w.map(x=>x.p)))}</td><td class="n">${inrL(sum(w.map(x=>x.p))*S.rate)}</td></tr>`).join('')}</table>`)+
+  card('How this is calculated','',`<p style="margin:0 0 8px">The model takes September’s average for each day of the week, then scales it by the average of the last three month-on-month growth rates, damped by 10% so it does not over-extrapolate (${sgn(F.g*100)} growth applied).</p><p style="margin:0">It runs entirely in your browser with plain JavaScript. A production version would add weather, production schedules and tariff changes.</p>`)+`</div>`;
+ $('#scSeg').onclick=e=>{const s=e.target.dataset.s;if(s){S.fc=s;PG.forecast()}};
+ const hl=[...Array(DAYS).keys()].map(dayLbl),fl=F.days.map(x=>dayLbl2(x.t)),labels=[...hl,...fl];
+ const pad=a=>[...Array(DAYS).fill(null),...a],hist=[...DAYT.map(Math.round),...Array(30).fill(null)];
+ const link=[...Array(DAYS-1).fill(null),Math.round(DAYT[DAYS-1]),...F.days.map(x=>Math.round(x.p))];
+ chart('cF',{type:'line',data:{labels,datasets:[
+  {label:'Lower bound',data:pad(F.days.map(x=>Math.round(x.lo))),borderColor:'transparent',pointRadius:0},
+  {label:'Likely range',data:pad(F.days.map(x=>Math.round(x.hi))),borderColor:'transparent',backgroundColor:'rgba(106,91,176,.16)',pointRadius:0,fill:'-1'},
+  {label:'Historical',data:hist,borderColor:'#0F8E98',borderWidth:2.2,pointRadius:0,tension:.2},
+  {label:'Projected',data:link,borderColor:'#6A5BB0',borderDash:[6,4],borderWidth:2.2,pointRadius:0,tension:.2}]},
+  options:base({plugins:{legend:{display:true,labels:{filter:i=>i.text!=='Lower bound'}}},scales:{x:{ticks:{maxTicksLimit:12}},y:Object.assign({beginAtZero:false},ytitle('kWh per day'))}})});
+};
+const dayLbl2=t=>t.getDate()+' '+M[t.getMonth()];
+
+/* ---------- Sustainability ---------- */
+PG.sustainability=()=>{
+ const e1=co2(GRIDNET),e0=co2(MONTHLY[22]*(1-SOLSH[10])),ren=SOLTOT/TOTAL;
+ const em=B.map((_,i)=>co2(BT[i]*(1-ren))),inten=B.map((b,i)=>BT[i]/b.area);
+ const m12=MONTHLY.slice(12);
+ $('#view').innerHTML=`<div class="kpis">`+kpi('Estimated CO₂',f1(e1)+' t','after solar, September 2026','#1E8A5A')+
+  kpi('Change vs August',dlt((e1/e0-1)*100,true),f1(e0)+' t in August','#0F8E98')+
+  kpi('Renewable contribution',pct(ren),'rooftop solar','#F0A81B','#solar')+
+  kpi('Energy intensity',f1(TOTAL/sum(B.map(b=>b.area)))+' kWh/m²','per month, all floor area','#5B73D6')+`</div>`+
+  `<div class="g2">`+card('Monthly emissions trend','Tonnes CO₂, last 12 months',box('cM',280))+card('Renewable share','Percent of consumption covered by solar',box('cR',280))+`</div>`+
+  `<div class="g2">`+card('Emissions by location','Tonnes CO₂ this month, solar shared pro rata',box('cEm',260))+card('Energy intensity by location','kWh per m² this month',box('cIn',260))+`</div>`+
+  foot(`Demo estimates only. Emissions use an illustrative grid factor of ${EF} kg CO₂ per kWh applied to grid consumption, and floor areas are fictional.`);
+ chart('cM',{type:'bar',data:{labels:m12.map((_,i)=>mLabel(i+12)),datasets:[{data:m12.map((v,i)=>+co2(v*(1-SOLSH[i])).toFixed(1)),backgroundColor:m12.map((_,i)=>i===11?'#1E8A5A':alpha('#1E8A5A',.45)),borderRadius:3}]},options:base({scales:{y:ytitle('tonnes CO₂')}})});
+ chart('cR',{type:'line',data:{labels:m12.map((_,i)=>mLabel(i+12)),datasets:[{data:SOLSH.map(v=>+(v*100).toFixed(1)),borderColor:'#F0A81B',backgroundColor:alpha('#F0A81B',.18),fill:true,borderWidth:2.4,pointRadius:3,tension:.3}]},options:base({scales:{y:ytitle('%')}})});
+ chart('cEm',{type:'bar',data:{labels:B.map(b=>b.short),datasets:[{data:em.map(v=>+v.toFixed(1)),backgroundColor:B.map(b=>b.color),borderRadius:3}]},options:base({scales:{y:ytitle('tonnes CO₂')}})});
+ chart('cIn',{type:'bar',data:{labels:B.map(b=>b.short),datasets:[{data:inten.map(v=>+v.toFixed(1)),backgroundColor:B.map(b=>b.color),borderRadius:3}]},options:base({scales:{y:ytitle('kWh/m²')}})});
+};
+
+/* ---------- Insights ---------- */
+PG.insights=()=>{
+ $('#view').innerHTML=`<div class="insgrid">${insights().map(insCard).join('')}</div>`+
+  foot('Each observation is computed from the fictional dataset when this page opens. Change the tariff, anomaly sensitivity or peak window and the wording and numbers update.');
+};
+
+applyTheme();
+render();
+})();
+</script>
 </body>
 </html>
