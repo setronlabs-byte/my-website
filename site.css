@@ -363,3 +363,11 @@ footer{background:var(--ink);color:#9BA3B4;padding:60px 0 28px;}
   .detail section{padding:64px 0;}
   .subnav{top:61px;}
 }
+
+/* Contact form status + honeypot */
+.hp{position:absolute;left:-9999px;opacity:0;height:0;width:0;}
+.form-status{margin-top:16px;font-size:0.92rem;min-height:1.2em;}
+.form-status.ok{color:#2F6B3A;}
+.form-status.err{color:#A33A3A;}
+.submit-btn:disabled{opacity:0.65;cursor:wait;}
+[hidden]{display:none!important;}
