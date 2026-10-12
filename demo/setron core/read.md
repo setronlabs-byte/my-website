@@ -1,1 +1,0 @@
-smart buisness managment platform
