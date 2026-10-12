@@ -248,18 +248,22 @@
 
     <div class="form-panel bracket">
       <h3>Request a consultation</h3>
-      <form id="contactForm">
+      <form id="contactForm" novalidate>
+        <input type="hidden" name="access_key" value="e94d5f2b-816f-4621-9625-c128ff9581f6">
+        <input type="hidden" name="subject" value="New enquiry from setronlabs.com">
+        <input type="hidden" name="from_name" value="Setron Labs Website">
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div class="form-group">
           <label for="name">Full name</label>
-          <input type="text" id="name" class="form-control" placeholder="Your name" required>
+          <input type="text" id="name" name="name" class="form-control" placeholder="Your name" required>
         </div>
         <div class="form-group">
           <label for="email">Email address</label>
-          <input type="email" id="email" class="form-control" placeholder="you@company.com" required>
+          <input type="email" id="email" name="email" class="form-control" placeholder="you@company.com" required>
         </div>
         <div class="form-group">
           <label for="service">Service of interest</label>
-          <select id="service" class="form-control" required>
+          <select id="service" name="service" class="form-control" required>
             <option value="">Select a service</option>
             <option value="web-development">Web Development</option>
             <option value="app-development">App Development</option>
@@ -268,13 +272,19 @@
             <option value="cybersecurity">Cybersecurity</option>
             <option value="data-analytics">Data Analytics</option>
             <option value="ai-ml-solutions">AI &amp; Machine Learning</option>
+            <option value="other">Other</option>
           </select>
+        </div>
+        <div class="form-group" id="otherWrap" hidden>
+          <label for="otherService">Please tell us which service you need</label>
+          <input type="text" id="otherService" name="other_service" class="form-control" placeholder="e.g. ERP integration, IT support">
         </div>
         <div class="form-group">
           <label for="message">Project details</label>
-          <textarea id="message" class="form-control" rows="4" placeholder="Tell us about your project" required></textarea>
+          <textarea id="message" name="message" class="form-control" rows="4" placeholder="Tell us about your project" required></textarea>
         </div>
-        <button type="submit" class="submit-btn">Send message</button>
+        <button type="submit" class="submit-btn" id="submitBtn">Send message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
       </form>
     </div>
   </div>
@@ -342,14 +352,57 @@
     if(s && sel && sel.querySelector('option[value="'+s+'"]')) sel.value = s;
   })();
 
-  document.getElementById('contactForm').addEventListener('submit', function(e){
+  var form = document.getElementById('contactForm');
+  var sel = document.getElementById('service');
+  var otherWrap = document.getElementById('otherWrap');
+  var otherInput = document.getElementById('otherService');
+  var statusEl = document.getElementById('formStatus');
+  var submitBtn = document.getElementById('submitBtn');
+
+  function toggleOther(){
+    var on = sel.value === 'other';
+    otherWrap.hidden = !on;
+    otherInput.required = on;
+    if(!on) otherInput.value = '';
+  }
+  sel.addEventListener('change', toggleOther);
+  toggleOther();
+
+  function setStatus(msg, type){ statusEl.textContent = msg; statusEl.className = 'form-status ' + (type||''); }
+
+  form.addEventListener('submit', async function(e){
     e.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const sel = document.getElementById('service');
-    const service = sel.options[sel.selectedIndex].text;
-    alert(`Thank you, ${name}. We've received your message about ${service} and will reach out at ${email} shortly.`);
-    this.reset();
+    if(!form.reportValidity()) return;
+
+    var data = new FormData(form);
+    if(data.get('access_key') === 'YOUR_WEB3FORMS_ACCESS_KEY'){
+      setStatus('The form is not connected yet. Please email us at setronlabs@gmail.com.', 'err');
+      return;
+    }
+    // send the readable service name instead of the internal value
+    var label = sel.options[sel.selectedIndex].text;
+    data.set('service', sel.value === 'other' ? 'Other: ' + otherInput.value.trim() : label);
+    data.set('subject', 'New enquiry from setronlabs.com: ' + data.get('service'));
+
+    submitBtn.disabled = true; submitBtn.textContent = 'Sending…'; setStatus('');
+    try{
+      var res = await fetch('https://api.web3forms.com/submit', {
+        method:'POST', headers:{'Accept':'application/json'}, body:data
+      });
+      var json = await res.json();
+      if(res.ok && json.success){
+        var name = data.get('name');
+        form.reset(); toggleOther();
+        setStatus('Thank you, ' + name + '. We have received your message and will reply by email shortly.', 'ok');
+        if(window.gtag) gtag('event','generate_lead',{event_category:'contact_form'});
+      } else {
+        throw new Error(json.message || 'Request failed');
+      }
+    }catch(err){
+      setStatus('Sorry, your message could not be sent. Please try again or email setronlabs@gmail.com.', 'err');
+    }finally{
+      submitBtn.disabled = false; submitBtn.textContent = 'Send message';
+    }
   });
 </script>
 
