@@ -1,0 +1,31 @@
+# Setron Labs
+
+> Setron Labs is an IT consultancy and software engineering team based in Vadodara, Gujarat, India. We design, build, and maintain web applications, mobile apps, cloud infrastructure, security, data analytics, and AI solutions for growing businesses.
+
+Setron Labs works with a small number of clients at a time. The engineers who scope a project are the ones who build and support it. Every engagement starts with a written scope, timeline, and cost before development begins.
+
+## Services
+
+- [Web Development](https://setronlabs.com/web-development): Custom web applications, business websites, admin panels, APIs and integrations, performance and accessibility work, and ongoing support.
+- [App Development](https://setronlabs.com/app-development): Native and cross-platform mobile apps for iOS and Android, including backend, UI/UX design, and App Store and Google Play submission.
+- [IT Consultancy](https://setronlabs.com/it-consultancy): Independent technical advisory covering technology audits, architecture reviews, vendor and tool selection, roadmaps, and build-vs-buy analysis.
+- [Cloud Solutions](https://setronlabs.com/cloud-solutions): Cloud migration, infrastructure design, cost optimisation, CI/CD automation, backup and disaster recovery across AWS, Azure, and Google Cloud.
+- [Cybersecurity](https://setronlabs.com/cybersecurity): Security assessments, vulnerability testing, threat modelling, compliance support, and incident readiness.
+- [Data Analytics](https://setronlabs.com/data-analytics): Data consolidation, dashboards and business intelligence, automated reporting, data cleaning, and analysis.
+- [AI & Machine Learning](https://setronlabs.com/ai-ml-solutions): AI agents, workflow automation, knowledge assistants, document processing, predictive models, and AI-powered products.
+
+## Company
+
+- [Homepage](https://setronlabs.com/): Overview of Setron Labs, services, working approach, and contact form.
+- [Demos](https://setronlabs.com/demo/projects): Demo projects showing examples of our work.
+
+## Contact
+
+- Email: setronlabs@gmail.com
+- Location: Gotri, Vadodara, Gujarat, India
+- Hours: Monday to Friday 9:00 AM to 6:00 PM, Saturday 10:00 AM to 4:00 PM (IST)
+- Contact form: https://setronlabs.com/#contact
+
+## Optional
+
+- [Sitemap](https://setronlabs.com/sitemap.xml)
